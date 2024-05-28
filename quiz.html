@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oceanica | Quiz</title>
+
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav
+      class="fixed top-0 right-0 left-0 z-50 bg-bg shadow-lg px-6 md:px-24 py-4 lg:py-6 transform -translate-y-28 transition ease duration-500 text-font"
+      id="navbar"
+    >
+      <div class="hidden lg:flex items-center justify-between">
+        <div class="flex gap-8 items-center">
+          <a
+            href="index.html"
+            class="flex items-center gap-2 text-4xl font-semibold"
+          >
+            <img
+              src="src/img/logo.jpg"
+              class="w-12 rounded-full transition ease-in-out duration-300"
+              alt=""
+            />
+          </a>
+          <div class="flex items-center gap-1 text-2xl font-medium">
+            <details class="dropdown">
+              <summary
+                class="cursor-pointer hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >
+                Pustaka Biru
+              </summary>
+              <ul class="shadow-xl mt-9 bg-bg dropdown-content w-64">
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pilar-kehidupan-bumi.html">Pilar Kehidupan Bumi</a>
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="dekonstruksi-kerusakan-laut.html"
+                    >Dekonstruksi Kerusakan Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="melindungi-ekosistem-bawah-laut.html"
+                    >Melindungi Ekosistem Bawah Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pelangi-bawah-laut.html">Pelangi Bawah Laut</a>
+                </li>
+              </ul>
+            </details>
+
+            <a
+              href="ocea-plastic-tracker.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Tracker</a
+            >
+            <a
+              href="ocean-marine-simulation.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Simulation</a
+            >
+            <a
+              href="eco-marine-quiz.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Quiz</a
+            >
+          </div>
+        </div>
+        <div class="flex gap-8 items-center text-2xl font-medium text-font">
+          <div class="group relative">
+            <a href="index.html">
+              <i data-feather="home" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Beranda</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="tentang.html">
+              <i data-feather="info" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Tentang</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="profil.html">
+              <i data-feather="user" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Profil</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="kontak.html">
+              <i data-feather="mail" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Kontak</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="lg:hidden flex justify-between items-center">
+        <div>
+          <img src="src/img/logo.jpg" class="w-8 rounded-full" alt="" />
+        </div>
+        <div class="flex gap-4">
+          <a href="profil.html"><i data-feather="user"></i></a>
+          <a href="kontak.html"><i data-feather="mail"></i></a>
+          <button
+            id="menu-toggle"
+            class="text-font bg-trasnparent flex items-center font-medium gap-2 text-xl focus:outline-none"
+          >
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="lg:hidden hidden pt-6">
+        <a
+          href="index.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Beranda</a
+        >
+        <a
+          href="tentang.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tentang</a
+        >
+        <div class="relative">
+          <button
+            id="services-toggle-mobile"
+            class="block w-full text-left py-2 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25 focus:outline-none"
+          >
+            Daftar Baca
+          </button>
+          <div
+            id="services-dropdown-mobile"
+            class="top-full left-0 bg-gray-300 shadow bg-opacity-15 rounded-md py-2 mt-2 w-full hidden"
+          >
+            <a
+              href="pilar-kehidupan-bumi.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pilar Kehidupan Bumi</a
+            >
+            <a
+              href="dekonstruksi-kerusakan-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Dekonstruksi Kerusakan Laut</a
+            >
+            <a
+              href="melindungi-ekosistem-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Melindungi Ekosistem Bawah Laut</a
+            >
+            <a
+              href="pelangi-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pelangi Bawah Laut</a
+            >
+          </div>
+        </div>
+        <a
+          href="ocea-plastic-tracker.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tracker</a
+        >
+        <a
+          href="ocean-marine-simulation.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Simulation</a
+        >
+        <a
+          href="eco-marine-quiz.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Quiz</a
+        >
+      </div>
+      <button
+        class="absolute bottom-[-180%] md:bottom-[-90%] right-0 flex items-center justify-center bg-bg rounded-xl p-1 text-font mr-4"
+        onclick="scrollNav()"
+      >
+        <i
+          data-feather="chevron-down"
+          class="w-8 h-8 transform rotate-0 transition-transform duration-500"
+          id="btn-nav"
+        ></i>
+      </button>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- quiz start -->
+    <section class="min-h-screen flex justify-center px-7 pt-12 md:px-16 mb-16">
+      <div class="flex flex-col" id="quizSec" data-aos="zoom-in">
+        <!-- head -->
+        <div class="flex justify-between mb-6 lg:mb-8">
+          <a
+            href="eco-marine-quiz.html "
+            class="flex items-center gap-1 text-lg font-medium rounded-box"
+            ><i data-feather="arrow-left"></i>Kembali</a
+          >
+          <h1 class="text-2xl font-semibold">Quiz</h1>
+        </div>
+        <!-- soal 1 -->
+        <div
+          class="bg-white shadow-lg shadow-black/20 p-4 md:p-6 rounded-box lg:max-w-2xl"
+          id="soal1"
+        >
+          <p class="text-lg font-medium">Soal <span>1</span>/5</p>
+          <div class="mt-4">
+            <p class="text-xl md:text-3xl">
+              Apa yang merupakan sumber utama sampah plastik di laut?
+            </p>
+            <div
+              class="mt-6 md:mt-12 flex flex-col justify-center lg:justify-normal lg:flex-row lg:flex-wrap gap-4 lg:gap-5"
+            >
+              <div
+                class="form-control border border-font rounded-box bg-primary bg-opacity-10 hover:bg-opacity-35 transition ease-in-out duration-300 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >Pembuangan limbah industri</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="a"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+              <div
+                class="form-control border border-font rounded-box bg-primary hover:bg-opacity-35 transition ease-in-out duration-300 bg-opacity-10 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >Pembuangan sampah rumah tangga</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="b"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+              <div
+                class="form-control border border-font rounded-box bg-primary hover:bg-opacity-35 transition ease-in-out duration-300 bg-opacity-10 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >Kerusakan kapal tanker</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="c"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+            </div>
+            <button
+              class="text-lg font-medium rounded-box float-right mt-6 w-full bg-primary hover:bg-primary/65 transition ease-in-out duration-300 py-2"
+              onclick="getOpsi1('soal1', 'soal2')"
+            >
+              Lanjut
+            </button>
+          </div>
+        </div>
+        <!-- soal 2 -->
+        <div
+          class="hidden bg-white shadow-lg shadow-black/20 p-4 md:p-6 rounded-box lg:max-w-2xl"
+          id="soal2"
+        >
+          <p class="text-lg font-medium">Soal <span>2</span>/5</p>
+          <div class="mt-4">
+            <p class="text-xl md:text-3xl">
+              Berapa lama dibutuhkan oleh High-Density Polyethylene untuk
+              terurai di laut?
+            </p>
+            <div
+              class="mt-6 md:mt-12 flex flex-col justify-center lg:justify-normal lg:flex-row lg:flex-wrap gap-4 lg:gap-5"
+            >
+              <div
+                class="form-control border border-font rounded-box bg-primary bg-opacity-10 hover:bg-opacity-35 transition ease-in-out duration-300 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >± 450 tahun.</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="a"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+              <div
+                class="form-control border border-font rounded-box bg-primary hover:bg-opacity-35 transition ease-in-out duration-300 bg-opacity-10 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >20 - 30 tahun.</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="b"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+              <div
+                class="form-control border border-font rounded-box bg-primary hover:bg-opacity-35 transition ease-in-out duration-300 bg-opacity-10 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >± 20 - 100 tahun.</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="c"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+            </div>
+            <button
+              class="text-lg font-medium rounded-box float-right mt-6 w-full bg-primary hover:bg-primary/65 transition ease-in-out duration-300 py-2"
+              onclick="getOpsi2('soal2', 'soal3')"
+            >
+              Lanjut
+            </button>
+          </div>
+        </div>
+        <!-- soal 3 -->
+        <div
+          class="hidden bg-white shadow-lg shadow-black/20 p-4 md:p-6 rounded-box lg:max-w-2xl"
+          id="soal3"
+        >
+          <p class="text-lg font-medium">Soal <span>3</span>/5</p>
+          <div class="mt-4">
+            <p class="text-xl md:text-3xl">
+              Apa dampak negatif dari sampah plastik bagi biota laut?
+            </p>
+            <div
+              class="mt-6 md:mt-12 flex flex-col justify-center lg:justify-normal lg:flex-row lg:flex-wrap gap-4 lg:gap-5"
+            >
+              <div
+                class="form-control border border-font rounded-box bg-primary bg-opacity-10 hover:bg-opacity-35 transition ease-in-out duration-300 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >Penyumbatan sistem pernapasan</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="a"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+              <div
+                class="form-control border border-font rounded-box bg-primary hover:bg-opacity-35 transition ease-in-out duration-300 bg-opacity-10 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >Penyakit dan Kesehatan Hewan Laut</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="b"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+              <div
+                class="form-control border border-font rounded-box bg-primary hover:bg-opacity-35 transition ease-in-out duration-300 bg-opacity-10 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >Peningkatan kadar oksigen di air
+                  </span>
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="c"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+            </div>
+            <button
+              class="text-lg font-medium rounded-box float-right mt-6 w-full bg-primary hover:bg-primary/65 transition ease-in-out duration-300 py-2"
+              onclick="getOpsi3('soal3', 'soal4')"
+            >
+              Lanjut
+            </button>
+          </div>
+        </div>
+        <!-- soal 4 -->
+        <div
+          class="hidden bg-white shadow-lg shadow-black/20 p-4 md:p-6 rounded-box lg:max-w-2xl"
+          id="soal4"
+        >
+          <p class="text-lg font-medium">Soal <span>4</span>/5</p>
+          <div class="mt-4">
+            <p class="text-xl md:text-3xl">
+              Bagaimana cara terbaik untuk mengurangi sampah plastik di laut?
+            </p>
+            <div
+              class="mt-6 md:mt-12 flex flex-col justify-center lg:justify-normal lg:flex-row lg:flex-wrap gap-4 lg:gap-5"
+            >
+              <div
+                class="form-control border border-font rounded-box bg-primary bg-opacity-10 hover:bg-opacity-35 transition ease-in-out duration-300 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >Membiarkan sampah tetap berada di laut</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="a"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+              <div
+                class="form-control border border-font rounded-box bg-primary hover:bg-opacity-35 transition ease-in-out duration-300 bg-opacity-10 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >Membuang sampah plastik ke sungai</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="b"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+              <div
+                class="form-control border border-font rounded-box bg-primary hover:bg-opacity-35 transition ease-in-out duration-300 bg-opacity-10 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >Mengurangi penggunaan plastik sekali pakai</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="c"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+            </div>
+            <button
+              class="text-lg font-medium rounded-box float-right mt-6 w-full bg-primary hover:bg-primary/65 transition ease-in-out duration-300 py-2"
+              onclick="getOpsi4('soal4', 'soal5')"
+            >
+              Lanjut
+            </button>
+          </div>
+        </div>
+        <!-- soal 5 -->
+        <div
+          class="hidden bg-white shadow-lg shadow-black/20 p-4 md:p-6 rounded-box lg:max-w-2xl"
+          id="soal5"
+        >
+          <p class="text-lg font-medium">Soal <span>5</span>/5</p>
+          <div class="mt-4">
+            <p class="text-xl md:text-3xl">
+              Apa yang dapat dilakukan oleh individu untuk membantu melindungi
+              laut dari sampah plastik?
+            </p>
+            <div
+              class="mt-6 md:mt-12 flex flex-col justify-center lg:justify-normal lg:flex-row lg:flex-wrap gap-4 lg:gap-5"
+            >
+              <div
+                class="form-control border border-font rounded-box bg-primary bg-opacity-10 hover:bg-opacity-35 transition ease-in-out duration-300 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >Membuang sampah plastik sembarangan di pantai</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="a"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+              <div
+                class="form-control border border-font rounded-box bg-primary hover:bg-opacity-35 transition ease-in-out duration-300 bg-opacity-10 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >Memilih untuk menggunakan produk plastik sekali pakai</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="b"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+              <div
+                class="form-control border border-font rounded-box bg-primary hover:bg-opacity-35 transition ease-in-out duration-300 bg-opacity-10 py-1 lg:py-2 px-2 lg:px-3 w-full"
+              >
+                <label class="label cursor-pointer flex justify-between">
+                  <span class="label-text text-lg md:text-xl text-font"
+                    >Mengikuti kegiatan pembersihan pantai dan lautan</span
+                  >
+                  <input
+                    type="radio"
+                    name="opsi"
+                    value="c"
+                    class="radio checked:bg-green-300 checked:shadow-none checked:animate-bounce"
+                  />
+                </label>
+              </div>
+            </div>
+            <button
+              class="text-lg font-medium rounded-box float-right mt-6 w-full bg-primary hover:bg-primary/65 transition ease-in-out duration-300 py-2"
+              onclick="getOpsi5('soal5', 'hasil')"
+            >
+              Lanjut
+            </button>
+          </div>
+        </div>
+        <!-- hasil -->
+        <div
+          class="hidden bg-white shadow-lg shadow-black/20 p-4 md:p-6 rounded-box lg:max-w-2xl"
+          id="hasil"
+        >
+          <div class="mt-4">
+            <p class="text-xl md:text-3xl">Semua pertanyaan telah dijawab</p>
+            <button
+              class="text-lg font-medium rounded-box float-right mt-6 w-full bg-primary hover:bg-primary/65 transition ease-in-out duration-300 py-2"
+              onclick="cekSkor()"
+            >
+              Cek Skor
+            </button>
+          </div>
+        </div>
+        <ul class="steps mt-12">
+          <li class="step" id="step1"></li>
+          <li class="step" id="step2"></li>
+          <li class="step" id="step3"></li>
+          <li class="step" id="step4"></li>
+          <li class="step" id="step5"></li>
+        </ul>
+      </div>
+      <div class="hidden flex-col" id="skorSec">
+        <!-- head -->
+        <div class="flex justify-between">
+          <a
+            href="eco-marine-quiz.html "
+            class="flex items-center gap-1 text-lg md:text-xl font-medium rounded-box"
+            ><i data-feather="arrow-left"></i>Kembali</a
+          >
+          <h1 class="text-2xl font-semibold">Quiz</h1>
+        </div>
+
+        <!-- body -->
+        <div class="flex lg:max-w-xl" id="hasil">
+          <div class="mt-4">
+            <p class="text-2xl md:text-5xl font-semibold text-center">
+              Skor Kamu
+            </p>
+            <div
+              class="flex flex-col items-center mt-6 lg:mt-8 bg-white rounded-box shadow-lg p-5 py-6 md:p-6"
+            >
+              <div class="flex flex-col items-center w-full">
+                <canvas
+                  id="resultChart"
+                  class="w-full max-w-full lg:max-w-md"
+                ></canvas>
+                <span class="text-xl font-medium mt-4" id="skorOut"></span>
+              </div>
+              <div class="mt-6">
+                <div class="mb-2 lg:mb-6 flex flex-col gap-2">
+                  <p
+                    class="font-medium text-lg md:text-xl flex justify-between lg:justify-normal lg:gap-x-5"
+                  >
+                    Benar : <span id="skorBenar"></span>
+                  </p>
+                  <p
+                    class="font-medium text-lg md:text-xl flex justify-between lg:justify-normal lg:gap-x-5"
+                  >
+                    Salah : <span id="skorSalah"></span>
+                  </p>
+                </div>
+                <p class="text-sm md:text-xl text-justify" id="penilaian"></p>
+                <div class="flex justify-center lg:justify-normal mt-6">
+                  <a
+                    href="index.html"
+                    class="text-xl md:text-xl bg-primary hover:bg-primary/65 transition ease-in-out duration-300 px-4 py-2 rounded-box font-medium w-full lg:w-fit text-center"
+                    >Kembali ke halaman utama</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- quiz end -->
+
+    <!-- footer start -->
+    <footer class="footer footer-center p-10 bg-dark text-base-content">
+      <nav class="grid grid-flow-col gap-4 text-lg text-bg">
+        <a class="link link-hover" href="index.html">Beranda</a>
+        <a class="link link-hover" href="tentang.html">Tentang </a>
+
+        <a class="link link-hover" href="profil.html">Profil</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4 text-bg">
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"> <i data-feather="github"></i></a>
+          <a href="#"><i data-feather="facebook"></i></a>
+        </div>
+      </nav>
+      <aside>
+        <p class="text-bg text-sm">
+          Copyright © 2024 Oceanica - Marine Ecosystem
+        </p>
+      </aside>
+    </footer>
+    <!-- footer end -->
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+    </script>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

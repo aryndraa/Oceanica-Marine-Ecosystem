@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oceanica | Simulation</title>
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav
+      class="fixed top-0 right-0 left-0 z-50 bg-bg shadow-lg px-6 md:px-24 py-4 lg:py-6 transform -translate-y-28 transition ease duration-500 text-font"
+      id="navbar"
+    >
+      <div class="hidden lg:flex items-center justify-between">
+        <div class="flex gap-8 items-center">
+          <a
+            href="index.html"
+            class="flex items-center gap-2 text-4xl font-semibold"
+          >
+            <img
+              src="src/img/logo.jpg"
+              class="w-12 rounded-full transition ease-in-out duration-300"
+              alt=""
+            />
+          </a>
+          <div class="flex items-center gap-1 text-2xl font-medium">
+            <details class="dropdown">
+              <summary
+                class="cursor-pointer hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >
+                Pustaka Biru
+              </summary>
+              <ul class="shadow-xl mt-9 bg-bg dropdown-content w-64">
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pilar-kehidupan-bumi.html">Pilar Kehidupan Bumi</a>
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="dekonstruksi-kerusakan-laut.html"
+                    >Dekonstruksi Kerusakan Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="melindungi-ekosistem-bawah-laut.html"
+                    >Melindungi Ekosistem Bawah Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pelangi-bawah-laut.html">Pelangi Bawah Laut</a>
+                </li>
+              </ul>
+            </details>
+
+            <a
+              href="ocea-plastic-tracker.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Tracker</a
+            >
+            <a
+              href="ocean-marine-simulation.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Simulation</a
+            >
+            <a
+              href="eco-marine-quiz.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Quiz</a
+            >
+          </div>
+        </div>
+        <div class="flex gap-8 items-center text-2xl font-medium text-font">
+          <div class="group relative">
+            <a href="index.html">
+              <i data-feather="home" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Beranda</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="tentang.html">
+              <i data-feather="info" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Tentang</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="profil.html">
+              <i data-feather="user" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Profil</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="kontak.html">
+              <i data-feather="mail" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Kontak</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="lg:hidden flex justify-between items-center">
+        <div>
+          <img src="src/img/logo.jpg" class="w-8 rounded-full" alt="" />
+        </div>
+        <div class="flex gap-4">
+          <a href="profil.html"><i data-feather="user"></i></a>
+          <a href="kontak.html"><i data-feather="mail"></i></a>
+          <button
+            id="menu-toggle"
+            class="text-font bg-trasnparent flex items-center font-medium gap-2 text-xl focus:outline-none"
+          >
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="lg:hidden hidden pt-6">
+        <a
+          href="index.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Beranda</a
+        >
+        <a
+          href="tentang.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tentang</a
+        >
+        <div class="relative">
+          <button
+            id="services-toggle-mobile"
+            class="block w-full text-left py-2 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25 focus:outline-none"
+          >
+            Daftar Baca
+          </button>
+          <div
+            id="services-dropdown-mobile"
+            class="top-full left-0 bg-gray-300 shadow bg-opacity-15 rounded-md py-2 mt-2 w-full hidden"
+          >
+            <a
+              href="pilar-kehidupan-bumi.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pilar Kehidupan Bumi</a
+            >
+            <a
+              href="dekonstruksi-kerusakan-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Dekonstruksi Kerusakan Laut</a
+            >
+            <a
+              href="melindungi-ekosistem-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Melindungi Ekosistem Bawah Laut</a
+            >
+            <a
+              href="pelangi-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pelangi Bawah Laut</a
+            >
+          </div>
+        </div>
+        <a
+          href="ocea-plastic-tracker.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tracker</a
+        >
+        <a
+          href="ocean-marine-simulation.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Simulation</a
+        >
+        <a
+          href="eco-marine-quiz.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Quiz</a
+        >
+      </div>
+      <button
+        class="absolute bottom-[-180%] md:bottom-[-90%] right-0 flex items-center justify-center bg-bg rounded-xl p-1 text-font mr-4"
+        onclick="scrollNav()"
+      >
+        <i
+          data-feather="chevron-down"
+          class="w-8 h-8 transform rotate-0 transition-transform duration-500"
+          id="btn-nav"
+        ></i>
+      </button>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    <section class="min-h-[80vh] flex items-center">
+      <div class="px-7 md:px-16 flex-1" data-aos="fade-right">
+        <h1 class="text-5xl md:text-8xl font-semibold mb-2 md:mb-4">
+          Eco Marine Simulation
+        </h1>
+        <p class="text-lg md:text-xl mb-5 md:mb-8">
+          Selamat datang di laut simulasi Oceanica. disini kamu dapat memplajari
+          tentang pencemaran lingkungann laut melalui media simulasi.
+        </p>
+        <button
+          class="px-8 py-2 w-full lg:w-auto bg-font hover:bg-font/85 transition ease-in-out duration-300 text-bg text-lg font-medium md:text-xl rounded-box"
+          onclick="openGuide()"
+        >
+          Guide
+        </button>
+      </div>
+      <div class="hidden lg:block lg:flex-1">
+        <img src="src/img/simulation/bg2.svg" class="drop-shadow-lg" />
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- Guide start -->
+    <div class="hidden justify-center" id="guide-box">
+      <div
+        class="fixed top-1/2 left-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center gap-5 bg-white py-6 px-7 md:px-12 min-w-full min-h-screen lg:min-w-min lg:max-w-5xl lg:min-h-min shadow-lg rounded-box"
+      >
+        <div
+          class="flex flex-col justify-center lg:items-baseline gap-5 md:gap-8"
+        >
+          <div class="w-full">
+            <h1
+              class="text-3xl md:text-5xl font-semibold pb-2 border-b-2 border-font mb-2 md:mb-4"
+            >
+              Simulation Guide
+            </h1>
+            <p class="text-sm md:text-xl text-justify">
+              Marine Simulation adalah media edukasi berbasis simulasi yang
+              mengajarkan kamu bagaimana suatu elemen pengrusak ekosistem laut
+              berdampak pada laut. Kamu dapat menambahkan banyak ikan dan
+              melihat bagaimana elemen pengrusak ekosistem memperngaruhi
+              populasi ikan mu dan kondisi lingkungan laut. Air air laut akan
+              berubah sesuai tingkat kerusakan.
+            </p>
+          </div>
+          <div class="w-full">
+            <h2
+              class="text-3xl md:text-5xl pb-2 border-b-2 border-font font-medium mb-2 md:mb-4"
+            >
+              Tingkat Kerusakan
+            </h2>
+            <div
+              class="flex flex-col lg:flex-row lg:flex-wrap justify-center lg:justify-between items-start"
+            >
+              <ul class="flex flex-col gap-1 md:gap-4">
+                <li
+                  class="flex items-center text-lg md:text-xl font-medium gap-2"
+                >
+                  <p>1.</p>
+                  <div class="w-5 h-5 bg-normal"></div>
+                  <p>Laut Sehat</p>
+                </li>
+                <li
+                  class="flex items-center text-lg md:text-xl font-medium gap-2"
+                >
+                  <p>2.</p>
+                  <div class="w-5 h-5 bg-rendah"></div>
+                  <p>Kerusakan Rendah</p>
+                </li>
+                <li
+                  class="flex items-center text-lg md:text-xl font-medium gap-2"
+                >
+                  <p>3.</p>
+                  <div class="w-5 h-5 bg-sedang"></div>
+                  <p>Kerusakan Sendang</p>
+                </li>
+                <li
+                  class="flex items-center text-lg md:text-xl font-medium gap-2"
+                >
+                  <p>4.</p>
+                  <div class="w-5 h-5 bg-signifikan"></div>
+                  <p>Kerusakan Signifikan</p>
+                </li>
+              </ul>
+
+              <ul class="flex flex-col gap-1 md:gap-4">
+                <li
+                  class="flex items-center text-lg md:text-xl font-medium gap-2"
+                >
+                  <p>5.</p>
+                  <div class="w-5 h-5 bg-moderat"></div>
+                  <p>Kerusakan Moderat</p>
+                </li>
+                <li
+                  class="flex items-center text-lg md:text-xl font-medium gap-2"
+                >
+                  <p>6.</p>
+                  <div class="w-5 h-5 bg-serius"></div>
+                  <p>Kerusakan Serius</p>
+                </li>
+                <li
+                  class="flex items-center text-lg md:text-xl font-medium gap-2"
+                >
+                  <p>7.</p>
+                  <div class="w-5 h-5 bg-kritis"></div>
+                  <p>Kerusakan Kritis</p>
+                </li>
+                <li
+                  class="flex items-center text-lg md:text-xl font-medium gap-2"
+                >
+                  <p>8.</p>
+                  <div class="w-5 h-5 bg-total"></div>
+                  <p>Kerusakan Total</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="bg-font hover:bg-font/85 transition ease-in-out duration-300 mt-2 py-3 text-white text-xl md:text-xl rounded-box font-medium"
+          onclick="closeGuide()"
+        >
+          Tutup
+        </button>
+      </div>
+    </div>
+    <!-- Guide end -->
+
+    <!-- simulation start -->
+    <section class="relative" data-aos="fade-up">
+      <div
+        class="absolute w-full min-h-52 bg-[url('img/simulation/wave.svg')] bg-cover bg-bottom wave top-[-7%] lg:top-[-0/5%]"
+      ></div>
+      <div
+        class="bg-normal transition ease duration-1000 min-h-screen flex flex-col justify-center items-center"
+        id="sea"
+      >
+        <!-- object -->
+        <div id="sea-fish" class="opacity-100 hidden">
+          <img
+            src="src/img/simulation/small-fish1.svg"
+            alt=""
+            class="absolute top-[35%] fish-l fl1"
+            id="fl1"
+          />
+          <img
+            src="src/img/simulation/small-fish1.svg"
+            alt=""
+            class="absolute top-[40%] fish-l fl2"
+            id="fl2"
+          />
+          <img
+            src="src/img/simulation/small-fish1.svg"
+            alt=""
+            class="absolute top-[56%] fish-l fl3"
+            id="fl3"
+          />
+          <img
+            src="src/img/simulation/small-fish1.svg"
+            alt=""
+            class="absolute top-[70%] fish-l fl4"
+            id="fl4"
+          />
+          <img
+            src="src/img/simulation/small-fish2.svg"
+            alt=""
+            class="absolute top-[32%] fish-r fr1"
+          />
+          <img
+            src="src/img/simulation/small-fish2.svg"
+            alt=""
+            class="absolute top-[62%] fish-r fr2"
+            id="fr2"
+          />
+
+          <!-- big -->
+
+          <img
+            src="src/img/simulation/jellyfish.svg"
+            alt=""
+            class="absolute right-[20%] w-32 jelly jel1"
+            id="jel1"
+          />
+          <img
+            src="src/img/simulation/jellyfish.svg"
+            alt=""
+            class="absolute right-[10%] w-24 jelly jel1"
+            id="jel2"
+          />
+        </div>
+
+        <!-- input -->
+        <div
+          class="bg-bg/45 rounded-box py-8 px-6 mx-7"
+          id="input-popu"
+          data-aos="zoom-in"
+        >
+          <h2 class="text-xl md:text-3xl font-medium mb-4">
+            Masukan Populasi Ikan
+          </h2>
+          <input
+            type="Number"
+            class="bg-bg/50 focus:outline-none w-full text-lg md:text-xl py-3 px-2"
+            id="populasi-ikan"
+          />
+          <button
+            class="mt-12 bg-font hover:bg-font/70 transition ease-in-out duration-300 text-white w-full py-2 md:py-3 text-xl md:text-xl font-medium"
+            onclick="getPopulation()"
+          >
+            Masukan
+          </button>
+          <span class="text-error hidden" id="pop-min"
+            >Masukan minimal 50 ikan</span
+          >
+        </div>
+      </div>
+    </section>
+    <!-- simulation end-->
+
+    <!-- controler -->
+    <div class="hidden relative bg-bg min-h-[80vh]" id="dash-control">
+      <aside
+        class="hidden lg:block absolute top-0 left-0 z-40 w-72 h-full transition-transform"
+      >
+        <div class="h-full py-6 overflow-y-auto bg-font text-bg">
+          <h2
+            class="hidden lg:block text-xl md:text-4xl font-medium px-6 pb-4 mb-6 border-b-2 border-bg"
+          >
+            Menu Controler
+          </h2>
+
+          <ul class="space-y-2 md:space-y-5 font-medium">
+            <li class="bg-primary/25 py-4" id="list-btn1">
+              <button
+                class="flex items-center w-full justify-between text-lg md:text-xl px-6"
+                onclick="side('list-btn1','list-btn2', 'control-id', 'desk-id' )"
+              >
+                <span class="hidden lg:block">Elements</span>
+                <i data-feather="trash"></i>
+              </button>
+            </li>
+            <li class="bg-font py-4" id="list-btn2">
+              <button
+                class="flex items-center w-full justify-between text-lg md:text-xl px-6"
+                onclick="side('list-btn2','list-btn1', 'desk-id', 'control-id' )"
+              >
+                <span class="hidden lg:block">Deskripsi</span>
+                <i data-feather="book"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="p-8 ml-0 lg:ml-72">
+        <div class="" id="control-id">
+          <h2 class="text-5xl font-semibold">Elements Controler</h2>
+          <div class="flex flex-wrap items-stretch justify-start gap-5 mt-8">
+            <button
+              class="bg-font/75 hover:bg-font/90 transition ease-in-out duration-300 w-full p-4 text-white flex items-center gap-5 text-lg lg:w-80 font-medium md:text-3xl"
+              id="btn-plastik"
+              onclick="getElement1('btn-plastik', 30)"
+            >
+              <img src="src/img/simulation/plastic.svg" alt="" />
+              Sampah Plastik
+            </button>
+            <button
+              class="bg-font/75 hover:bg-font/90 transition ease-in-out duration-300 w-full p-4 text-white flex items-center gap-5 text-lg lg:w-80 font-medium md:text-3xl"
+              id="btn-overfishing"
+              onclick="getElement2('btn-overfishing', 15)"
+            >
+              <img src="src/img/simulation/overfishing.png" alt="" />
+              Overfishing
+            </button>
+            <button
+              class="bg-font/75 hover:bg-font/90 transition ease-in-out duration-300 w-full p-4 text-white flex items-center gap-5 text-lg lg:w-80 font-medium md:text-3xl"
+              id="btn-limbah"
+              onclick="getElement3('btn-limbah', 20)"
+            >
+              <img src="src/img/simulation/oil.svg" alt="" />
+              Limbah Toxic
+            </button>
+            <button
+              class="bg-font/75 hover:bg-font/90 transition ease-in-out duration-300 w-full p-4 text-white flex items-center gap-5 text-lg lg:w-80 font-medium md:text-3xl"
+              id="btn-alga"
+              onclick="getElement4('btn-alga', 20)"
+            >
+              <img src="src/img/simulation/plastic.svg" alt="" />
+              Alga Berbahaya
+            </button>
+            <button
+              class="bg-font/75 hover:bg-font/90 transition ease-in-out duration-300 w-full p-4 text-white flex items-center gap-5 text-lg lg:w-80 font-medium md:text-3xl"
+              id="btn-minyak"
+              onclick="getElement5('btn-minyak', 10)"
+            >
+              <img src="src/img/simulation/minyak.svg" alt="" />
+              Tumpahan Minyak
+            </button>
+            <button
+              class="bg-font/75 hover:bg-font/90 transition ease-in-out duration-300 w-full p-4 text-white flex items-center gap-5 text-lg lg:w-80 font-medium md:text-3xl"
+              id="btn-keasaman"
+              onclick="getElement6('btn-keasaman', 5)"
+            >
+              <img src="src/img/simulation/asam.svg" alt="" />
+              Keasaman Laut
+            </button>
+          </div>
+          <div class="mt-8">
+            <p class="text-lg md:text-xl">
+              Elemen terpilih :
+              <span
+                id="element-select"
+                class="ml-2 font-medium text-xl md:text-xl"
+              ></span>
+            </p>
+            <div class="flex flex-col lg:flex-row gap-2 mt-6">
+              <button
+                class="hidden pointer-events-none lg:w-min px-6 py-2 md:py-3 rounded-box font-medium text-bg text-xl bg-green-500"
+                id="apply"
+                onclick="sumElement()"
+              >
+                Aplikasikan
+              </button>
+              <button
+                class="hidden pointer-events-none px-6 py-2 md:py-3 rounded-box font-medium text-bg text-xl bg-red-500"
+                id="reset"
+                onclick="resetElement()"
+              >
+                Atur Ulang
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hidden" id="desk-id">
+          <h2
+            class="text-3xl md:text-5xl font-semibold mb-10 text-center lg:text-start"
+          >
+            Deskripsi
+          </h2>
+          <div class="flex flex-col lg:flex-row gap-8">
+            <div
+              class="flex-1 w-full bg-white px-6 py-4 border-2 border-font rounded-box"
+            >
+              <h3
+                class="text-2xl md:text-3xl font-medium mb-4 md:mb-6 text-center"
+              >
+                Penurunan Populasi
+              </h3>
+              <div class="flex flex-col gap-6 md:gap-10">
+                <div class="flex justify-center">
+                  <div
+                    class="flex items-center justify-center w-44 md:w-56 h-44 md:h-56 rounded-full bg-error text-white"
+                  >
+                    <span class="text-3xl font-medium" id="des-percent"
+                      >0%</span
+                    >
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2 text-lg md:text-xl">
+                  <p class="flex justify-between items-center">
+                    Populasi awal : <span id="populasi-awal"></span>
+                  </p>
+                  <p class="flex justify-between items-center">
+                    Populasi akhir : <span id="populasi-akhir"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex-1 w-full bg-white px-6 py-6 border-2 border-font rounded-box"
+            >
+              <h3
+                class="text-2xl md:text-3xl font-medium mb-4 md:mb-6 text-center"
+              >
+                Deskripsi Kondisi
+              </h3>
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center gap-2">
+                  <div
+                    class="w-6 h-6 rounded-full bg-normal"
+                    id="indicator-sea"
+                  ></div>
+                  <p class="text-lg md:text-xl font-medium" id="condition-sea">
+                    Laut Sehat
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="text-lg md:text-xl text-justify"
+                    id="description-sea"
+                  >
+                    Ekosistem laut dalam kondisi optimal dengan air yang jernih,
+                    keanekaragaman hayati yang tinggi, dan populasi organisme
+                    laut yang seimbang. Tidak ada tanda-tanda polusi atau
+                    kerusakan ekosistem. Ini adalah kondisi ideal yang menjadi
+                    tujuan konservasi laut.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:hidden right-0 bg-font mt-4">
+        <ul class="flex font-medium text-bg">
+          <li class="bg-primary/25 py-4 flex-1" id="list-btn12">
+            <button
+              class="flex items-center w-full justify-center text-lg md:text-xl px-6"
+              onclick="side('list-btn12','list-btn22', 'control-id', 'desk-id' )"
+            >
+              <i data-feather="trash"></i>
+            </button>
+          </li>
+          <li class="bg-font py-4 flex-1" id="list-btn22">
+            <button
+              class="flex items-center w-full justify-center text-lg md:text-xl px-6"
+              onclick="side('list-btn22','list-btn12', 'desk-id', 'control-id' )"
+            >
+              <i data-feather="book"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- footer start -->
+    <div class="bg-dark px-7 md:px-16">
+      <footer class="footer py-10 text-base-content">
+        <nav>
+          <h6 class="footer-title">PAGES</h6>
+          <a href="index.html" class="link link-hover">Beranda</a>
+          <a href="tentang.html" class="link link-hover">Tentang</a>
+          <a href="profil.html" class="link link-hover">Profil</a>
+          <a href="kontak.html" class="link link-hover">Kontak</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">PUSTAKA BIRU</h6>
+          <a href="pilar-kehidupan-bumi.html" class="link link-hover"
+            >Pilar Kehidupan Bumi</a
+          >
+          <a href="dekonstruksi-kerusakan-laut.html" class="link link-hover"
+            >Dekonstruksi Kerusakan Laut</a
+          >
+          <a href="melindungi-ekosistem-bawah-laut.html" class="link link-hover"
+            >Melindungi Ekosistem Bawah Laut</a
+          >
+          <a href="pelangi-bawah-laut.html" class="link link-hover"
+            >Pelangi Bawah Laut</a
+          >
+        </nav>
+        <nav>
+          <h6 class="footer-title">FEATURE</h6>
+          <a href="ocea-plastic-tracker.html" class="link link-hover"
+            >Ocean Plastic Tracker</a
+          >
+          <a href="ocean-marine-simulation.html" class="link link-hover"
+            >Ocean Marine Simulator</a
+          >
+          <a href="eco-marine-quiz.html" class="link link-hover"
+            >Eco Marine Quiz</a
+          >
+        </nav>
+      </footer>
+      <footer class="footer py-4 text-base-content">
+        <aside class="items-center grid-flow-col">
+          <img src="src/img/logo.jpg" class="w-11 h-11 rounded-full" alt="" />
+          <p>
+            <span class="text-2xl font-medium">OCEANICA</span> <br />Marine
+            Ecosystem
+          </p>
+        </aside>
+        <nav class="md:place-self-center md:justify-self-end">
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/aryandrxx/" target="_blank"
+              ><i data-feather="instagram"> </i
+            ></a>
+            <a href="https://github.com/aryndraa" target="_blank"
+              ><i data-feather="github"> </i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100094456982384"
+              target="_blank"
+              ><i data-feather="facebook"> </i
+            ></a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    <!-- footer end -->
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+    </script>
+
+    <script>
+      feather.replace();
+      var sampah1 = 0;
+      var sampah2 = 0;
+      var sampah3 = 0;
+      var sampah4 = 0;
+      var sampah5 = 0;
+      var sampah6 = 0;
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

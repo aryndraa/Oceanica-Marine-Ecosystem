@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="bg-dark overflow-x-hidden">
+    <!-- navbar start -->
+    <nav
+      class="fixed top-0 right-0 left-0 z-50 bg-bg shadow-lg px-6 md:px-24 py-4 lg:py-6 transform -translate-y-28 transition ease duration-500 text-font"
+      id="navbar"
+    >
+      <div class="hidden lg:flex items-center justify-between">
+        <div class="flex gap-8 items-center">
+          <a
+            href="index.html"
+            class="flex items-center gap-2 text-4xl font-semibold"
+          >
+            <img
+              src="src/img/logo.jpg"
+              class="w-12 rounded-full transition ease-in-out duration-300"
+              alt=""
+            />
+          </a>
+          <div class="flex items-center gap-1 text-2xl font-medium">
+            <details class="dropdown">
+              <summary
+                class="cursor-pointer hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >
+                Pustaka Biru
+              </summary>
+              <ul class="shadow-xl mt-9 bg-bg dropdown-content w-64">
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pilar-kehidupan-bumi.html">Pilar Kehidupan Bumi</a>
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="dekonstruksi-kerusakan-laut.html"
+                    >Dekonstruksi Kerusakan Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="melindungi-ekosistem-bawah-laut.html"
+                    >Melindungi Ekosistem Bawah Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pelangi-bawah-laut.html">Pelangi Bawah Laut</a>
+                </li>
+              </ul>
+            </details>
+
+            <a
+              href="ocea-plastic-tracker.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Tracker</a
+            >
+            <a
+              href="ocean-marine-simulation.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Simulation</a
+            >
+            <a
+              href="eco-marine-quiz.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Quiz</a
+            >
+          </div>
+        </div>
+        <div class="flex gap-8 items-center text-2xl font-medium text-font">
+          <div class="group relative">
+            <a href="index.html">
+              <i data-feather="home" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Beranda</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="tentang.html">
+              <i data-feather="info" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Tentang</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="profil.html">
+              <i data-feather="user" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Profil</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="kontak.html">
+              <i data-feather="mail" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Kontak</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="lg:hidden flex justify-between items-center">
+        <div>
+          <img src="src/img/logo.jpg" class="w-8 rounded-full" alt="" />
+        </div>
+        <div class="flex gap-4">
+          <a href="profil.html"><i data-feather="user"></i></a>
+          <a href="kontak.html"><i data-feather="mail"></i></a>
+          <button
+            id="menu-toggle"
+            class="text-font bg-trasnparent flex items-center font-medium gap-2 text-xl focus:outline-none"
+          >
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="lg:hidden hidden pt-6">
+        <a
+          href="index.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Beranda</a
+        >
+        <a
+          href="tentang.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tentang</a
+        >
+        <div class="relative">
+          <button
+            id="services-toggle-mobile"
+            class="block w-full text-left py-2 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25 focus:outline-none"
+          >
+            Daftar Baca
+          </button>
+          <div
+            id="services-dropdown-mobile"
+            class="top-full left-0 bg-gray-300 shadow bg-opacity-15 rounded-md py-2 mt-2 w-full hidden"
+          >
+            <a
+              href="pilar-kehidupan-bumi.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pilar Kehidupan Bumi</a
+            >
+            <a
+              href="dekonstruksi-kerusakan-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Dekonstruksi Kerusakan Laut</a
+            >
+            <a
+              href="melindungi-ekosistem-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Melindungi Ekosistem Bawah Laut</a
+            >
+            <a
+              href="pelangi-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pelangi Bawah Laut</a
+            >
+          </div>
+        </div>
+        <a
+          href="ocea-plastic-tracker.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tracker</a
+        >
+        <a
+          href="ocean-marine-simulation.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Simulation</a
+        >
+        <a
+          href="eco-marine-quiz.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Quiz</a
+        >
+      </div>
+      <button
+        class="absolute bottom-[-180%] md:bottom-[-90%] right-0 flex items-center justify-center bg-bg rounded-xl p-1 text-font mr-4"
+        onclick="scrollNav()"
+      >
+        <i
+          data-feather="chevron-down"
+          class="w-8 h-8 transform rotate-0 transition-transform duration-500"
+          id="btn-nav"
+        ></i>
+      </button>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    <section
+      class="min-h-screen flex justify-center md:px-16 bg-[url('img/profil/herobg.jpg')] bg-no-repeat bg-cover bg-center bg-fixed bg-blend-multiply bg-gray-400 shadow-inner shadow-black"
+    >
+      <div
+        class="flex flex-col justify-center items-center text-center min-w-full lg:min-w-min lg:max-w-xl bg-font bg-opacity-30 lg:bg-opacity-65 lg:backdrop-blur-sm px-6"
+      >
+        <h1 class="text-bg text-3xl md:text-5xl drop-shadow-xl font-medium">
+          Hello, I'am <span class="text-primary drop-shadow-xl">Arya</span>
+        </h1>
+        <h2
+          class="text-bg text-3xl md:text-5xl font-medium mb-2 border-b-2 pb-2"
+        >
+          a Website Developer.
+        </h2>
+        <p class="text-bg text-lg md:text-xl mb-4 md:mb-6">
+          Hai saya Arya, siswa Timedoor Academy branch Renon yang berada di
+          level Teens Web Developer
+        </p>
+        <div class="text-bg flex gap-8 mt-10">
+          <a
+            href="https://www.instagram.com/aryandrxx/"
+            target="_blank"
+            class="border-2 rounded-full p-3 bg-white bg-opacity-20 hover:bg-opacity-50 transition ease-in-out duration-300 hover:transform hover:-translate-y-2 backdrop-blur-lg flex items-center justify-center"
+            ><i data-feather="instagram"></i
+          ></a>
+          <a
+            href="https://github.com/aryndraa"
+            target="_blank"
+            class="border-2 rounded-full p-3 bg-white bg-opacity-20 hover:bg-opacity-50 transition ease-in-out duration-300 hover:transform hover:-translate-y-2 backdrop-blur-lg flex items-center justify-center"
+            ><i data-feather="github"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100094456982384"
+            target="_blank"
+            class="border-2 rounded-full p-3 bg-white bg-opacity-20 hover:bg-opacity-50 transition ease-in-out duration-300 hover:transform hover:-translate-y-2 backdrop-blur-lg flex items-center justify-center"
+            ><i data-feather="facebook"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- abaut start -->
+    <section class="px-7 md:px-16 py-6 md:py-12 text-bg">
+      <h1
+        class="text-center text-3xl md:text-5xl font-semibold mb-8 pb-2 border-b-2 inline-flex"
+      >
+        About Me
+      </h1>
+      <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div class="max-w-full lg:flex-1">
+          <img
+            src="src/img/profil/profil3.jpeg"
+            alt="picture"
+            class="w-full border-b-2 lg:border-b-4 border-l-2 lg:border-l-4 pb-4 pl-4 border-sky-500"
+          />
+        </div>
+        <div class="lg:flex-1">
+          <h2 class="text-2xl md:text-4xl font-medium mb-1 lg:mb-2">
+            Hai Semua, saya I Putu Mahendra
+            <span class="text-sky-500">Arya</span> Valentino.
+          </h2>
+          <h3
+            class="text-xl md:text-xl tracking-widest text-sky-500 font-medium mb-4 lg:mb-6"
+          >
+            - Software Enginnering -
+          </h3>
+          <p class="text-lg md:text-xl mb-4 lg:mb-12">
+            Siswa Sekolah IT jurusan Rekayasa Perangkat Lunak. Ahli dalam
+            pengembangan website dan robotika. Saya berdedikasi untuk belajar
+            dan berkembang dalam bidang ini dengan tujuan menjadi seorang
+            profesional yang kompeten dan inovatif.
+          </p>
+          <ul class="list-none p-0">
+            <li class="flex justify-between text-sm md:text-xl mb-2">
+              <span class="font-medium w-1/3">Fullname</span
+              ><span class="flex-1">: I Putu Mahendra Arya Valentino</span>
+            </li>
+            <li class="flex justify-between text-sm md:text-xl mb-2">
+              <span class="font-medium w-1/3">Nickname</span
+              ><span class="flex-1">: Arya</span>
+            </li>
+            <li class="flex justify-between text-sm md:text-xl mb-2">
+              <span class="font-medium w-1/3">Phone</span
+              ><span class="flex-1">: 089528005812</span>
+            </li>
+            <li class="flex justify-between text-sm md:text-xl mb-2">
+              <span class="font-medium w-1/3">Email</span
+              ><span class="flex-1">: aryacoder1102@gmail.com</span>
+            </li>
+            <li class="flex justify-between text-sm md:text-xl mb-2">
+              <span class="font-medium w-1/3">From</span
+              ><span class="flex-1">: Denpasar Timur, Bali</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- abaut end -->
+
+    <!-- Skill start -->
+    <section class="px-7 md:px-24 py-6 md:py-12 pb-14 md:pb-20 text-bg">
+      <h1
+        class="text-center text-3xl md:text-5xl font-semibold mb-8 md:mb-12 pb-2 border-b-2 inline-flex"
+      >
+        Skill-Set
+      </h1>
+      <div class="flex flex-col gap-12 lg:gap-20">
+        <div>
+          <h2 class="text-2xl md:text-4xl font-medium text-sky-500">
+            Tech Skill
+          </h2>
+          <div class="mt-4 md:mt-6 flex">
+            <ul
+              class="flex wrapper overflow-x-auto touch-auto whitespace-nowrap scroll-smooth scrollable-list"
+            >
+              <li
+                class="flex flex-col justify-center items-center overflow-hidden mr-6 md:mr-12 min-w-[180px] max-w-[180px] md:min-w-[280px] lg:min-w-[300px] shadow-sm hover:shadow-lg hover:shadow-primary border transition ease-in-out duration-300 shadow-primary p-4 rounded-box"
+              >
+                <div class="max-w-md">
+                  <img
+                    src="src/img/profil/skill/JavaScript-logo (1).png"
+                    alt=""
+                    class="w-full rounded-box"
+                  />
+                </div>
+                <h3 class="text-xl md:text-xl font-medium mt-4 text-center">
+                  Javascript
+                </h3>
+              </li>
+              <li
+                class="flex flex-col justify-center items-center overflow-hidden mr-6 md:mr-12 min-w-[180px] max-w-[180px] md:min-w-[280px] lg:min-w-[300px] shadow-sm hover:shadow-lg hover:shadow-primary border transition ease-in-out duration-300 shadow-primary p-4 rounded-box"
+              >
+                <div class="max-w-md">
+                  <img
+                    src="src/img/profil/skill/Arduino_IDE_logo.svg.png"
+                    alt=""
+                    class="w-full rounded-box"
+                  />
+                </div>
+                <h3 class="text-xl md:text-xl font-medium mt-4 text-center">
+                  Arduino Ino
+                </h3>
+              </li>
+              <li
+                class="flex flex-col justify-center items-center overflow-hidden mr-6 md:mr-12 min-w-[180px] max-w-[180px] md:min-w-[280px] lg:min-w-[300px] shadow-sm hover:shadow-lg hover:shadow-primary border transition ease-in-out duration-300 shadow-primary p-4 rounded-box"
+              >
+                <div class="max-w-md">
+                  <img
+                    src="src/img/profil/skill/ISO_C++_Logo.svg.png"
+                    alt=""
+                    class="w-full rounded-box"
+                  />
+                </div>
+                <h3 class="text-xl md:text-xl font-medium mt-4 text-center">
+                  C++
+                </h3>
+              </li>
+              <li
+                class="flex flex-col justify-center items-center overflow-hidden mr-6 md:mr-12 min-w-[180px] max-w-[180px] md:min-w-[280px] lg:min-w-[300px] shadow-sm hover:shadow-lg hover:shadow-primary border transition ease-in-out duration-300 shadow-primary p-4 rounded-box"
+              >
+                <div class="max-w-md">
+                  <img
+                    src="src/img/profil/skill/php-icon-256x256-oq5bc0bt.png"
+                    alt=""
+                    class="w-full rounded-box"
+                  />
+                </div>
+                <h3 class="text-xl md:text-xl font-medium mt-4 text-center">
+                  PHP
+                </h3>
+              </li>
+              <li
+                class="flex flex-col justify-center items-center overflow-hidden mr-6 md:mr-12 min-w-[180px] max-w-[180px] md:min-w-[280px] lg:min-w-[300px] shadow-sm hover:shadow-lg hover:shadow-primary border transition ease-in-out duration-300 shadow-primary p-4 rounded-box"
+              >
+                <div class="max-w-md">
+                  <img
+                    src="src/img/profil/skill/Python-logo-notext.svg.png"
+                    alt=""
+                    class="w-full rounded-box"
+                  />
+                </div>
+                <h3 class="text-xl md:text-xl font-medium mt-4 text-center">
+                  Python
+                </h3>
+              </li>
+              <li
+                class="flex flex-col items-center overflow-hidden mr-6 md:mr-12 min-w-[180px] max-w-[180px] md:min-w-[280px] lg:min-w-[300px] shadow-sm hover:shadow-lg hover:shadow-primary border transition ease-in-out duration-300 shadow-primary p-4 rounded-box"
+              >
+                <div class="max-w-md">
+                  <img
+                    src="src/img/profil/skill/ActionScript_icon.png"
+                    alt=""
+                    class="w-full rounded-box"
+                  />
+                </div>
+                <h3 class="text-xl md:text-xl font-medium mt-4 text-center">
+                  Actionscript
+                </h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-2xl md:text-4xl font-medium text-sky-500">
+            Framework Skill
+          </h2>
+          <div class="mt-4 md:mt-6 flex">
+            <ul
+              class="flex wrapper overflow-x-auto touch-auto whitespace-nowrap scroll-smooth scrollable-list"
+            >
+              <li
+                class="flex flex-col justify-center items-center overflow-hidden mr-6 md:mr-12 min-w-[180px] max-w-[180px] md:min-w-[280px] lg:min-w-[300px] shadow-sm hover:shadow-lg hover:shadow-primary border transition ease-in-out duration-300 shadow-primary p-4 rounded-box"
+              >
+                <div class="max-w-md">
+                  <img
+                    src="src/img/profil/skill/react-icon-2048x2048-o8k3ymqa.png"
+                    alt=""
+                    class="w-full rounded-box"
+                  />
+                </div>
+                <h3 class="text-xl md:text-xl font-medium mt-4 text-center">
+                  React JS
+                </h3>
+              </li>
+              <li
+                class="flex flex-col justify-center items-center overflow-hidden mr-6 md:mr-12 min-w-[180px] max-w-[180px] md:min-w-[280px] lg:min-w-[300px] shadow-sm hover:shadow-lg hover:shadow-primary border transition ease-in-out duration-300 shadow-primary p-4 rounded-box"
+              >
+                <div class="max-w-md">
+                  <img
+                    src="src/img/profil/skill/images.png"
+                    alt=""
+                    class="w-full rounded-box"
+                  />
+                </div>
+                <h3 class="text-xl md:text-xl font-medium mt-4 text-center">
+                  Tailwind CSS
+                </h3>
+              </li>
+              <li
+                class="flex flex-col justify-center items-center overflow-hidden mr-6 md:mr-12 min-w-[180px] max-w-[180px] md:min-w-[280px] lg:min-w-[300px] shadow-sm hover:shadow-lg hover:shadow-primary border transition ease-in-out duration-300 shadow-primary p-4 rounded-box"
+              >
+                <div class="max-w-md">
+                  <img
+                    src="src/img/profil/skill/images.jpg"
+                    alt=""
+                    class="w-full rounded-box"
+                  />
+                </div>
+                <h3 class="text-xl md:text-xl font-medium mt-4 text-center">
+                  Boostrap
+                </h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skill end -->
+
+    <!-- about web start -->
+    <section class="px-7 md:px-24 py-12 md:py-20 text-bg">
+      <h1 class="text-xl md:text-4xl font-light mb-2 tracking-widest">
+        About This Website
+      </h1>
+      <div class="flex flex-col lg:flex-row justify-center gap-10 items-center">
+        <div class="">
+          <h2
+            class="text-7xl md:text-9xl font-semibold mb-6 pl-2 pb-2 md:pl-4 md:pb-4 border-b-2 border-l-2"
+          >
+            <spa class="text-sky-500">LIFE</spa> BELOW
+            <span class="text-sky-500">WATER</span>
+          </h2>
+          <p class="text-lg md:text-xl">
+            Website tentang ekosistem laut dan kehidupan bawah air adalah
+            inisiatif yang sangat bermanfaat karena dapat meningkatkan kesadaran
+            tentang pentingnya melindungi ekosistem laut yang sering kali
+            terabaikan, memberikan informasi mendidik tentang berbagai spesies
+            laut, ekosistem, dan keanekaragaman hayati, serta menginspirasi
+            tindakan konservasi dan perlindungan lingkungan.
+          </p>
+        </div>
+        <div class="">
+          <div class="max-w-full lg:min-w-[500px]">
+            <a
+              href="https://www.globalgoals.org/goals/14-life-below-water/#things-to-do"
+              target="_blank"
+            >
+              <img
+                src="src/img/profil/E-WEB-Goal-14-1024x1024-1.png"
+                class="w-full"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="py-12 md:py-12">
+        <h2 class="text-3xl md:text-4xl font-light tracking-widest mb-6">
+          Feature
+        </h2>
+        <div>
+          <ul
+            class="flex flex-col lg:flex-row lg:flex-wrap lg:justify-start justify-center items-stretch gap-10"
+          >
+            <li
+              class="max-w-full lg:max-w-sm flex flex-col justify-between p-4 lg:p-6 border-2 rounded-box bg-gradient-to-b from-sky-600/30 to-transparent"
+            >
+              <div>
+                <h3
+                  class="text-2xl md:text-3xl inline-block border-b-2 pb-2 font-semibold text-bg mb-4"
+                >
+                  Pustaka Biru
+                </h3>
+                <p class="text-lg lg:text-xl text-white/65">
+                  Fitur edukasi khusus di website ini yang menawarkan koleksi
+                  bacaan tentang ekosistem laut. Pustaka Biru dirancang untuk
+                  menjadi pusat pengetahuan bagi semua orang yang tertarik untuk
+                  memahami dan melindungi keindahan serta kekayaan laut kita.
+                </p>
+              </div>
+              <div class="mt-4 items-end">
+                <a
+                  href="index.html#pustaka-biru"
+                  class="flex justify-center p-2 text-lg md:text-xl font-medium bg-sky-500 hover:bg-sky-400 transition ease-in-out duration-300"
+                  >Lihat</a
+                >
+              </div>
+            </li>
+            <li
+              class="max-w-full lg:max-w-sm flex flex-col justify-between p-4 lg:p-6 border-2 rounded-box bg-gradient-to-b from-sky-600/30 to-transparent"
+            >
+              <div>
+                <h3
+                  class="text-2xl md:text-3xl inline-block border-b-2 pb-2 font-semibold text-bg mb-4"
+                >
+                  Ocean Plastic Tracker
+                </h3>
+                <p class="text-lg lg:text-xl text-white/65">
+                  Ocean Plastic Tracker adalah alat interaktif yang dirancang
+                  untuk membantu melacak penggunaan sampah pkastik yang kamu
+                  gunakan dan memprediksi produksi sampah plastik mu selama
+                  setahun
+                </p>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="ocea-plastic-tracker.html"
+                  class="flex justify-center p-2 text-lg md:text-xl font-medium bg-sky-500 hover:bg-sky-400 transition ease-in-out duration-300"
+                  >Lihat</a
+                >
+              </div>
+            </li>
+            <li
+              class="max-w-full lg:max-w-sm flex flex-col justify-between p-4 lg:p-6 border-2 rounded-box bg-gradient-to-b from-sky-600/30 to-transparent"
+            >
+              <div>
+                <h3
+                  class="text-2xl md:text-3xl inline-block border-b-2 pb-2 font-semibold text-bg mb-4"
+                >
+                  Eco Marine Simulation
+                </h3>
+                <p class="text-lg lg:text-xl text-white/65">
+                  Fitur simulasi visual yang dirancang untuk memberikan pengguna
+                  pengalaman mendalam dan edukatif tentang bagaimana berbagai
+                  faktor memengaruhi keseimbangan ekosistem laut.
+                </p>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="eco-marine-quiz.html"
+                  class="flex justify-center p-2 text-lg md:text-xl font-medium bg-sky-500 hover:bg-sky-400 transition ease-in-out duration-300"
+                  >Lihat</a
+                >
+              </div>
+            </li>
+            <li
+              class="max-w-full lg:max-w-sm flex flex-col justify-between p-4 lg:p-6 border-2 rounded-box bg-gradient-to-b from-sky-600/30 to-transparent"
+            >
+              <div>
+                <h3
+                  class="text-2xl md:text-3xl inline-block border-b-2 pb-2 font-semibold text-bg mb-4"
+                >
+                  Eco Marine Quiz
+                </h3>
+                <p class="text-lg lg:text-xl text-white/65">
+                  Fitur ini dirancang untuk menguji dan memperluas pengetahuan
+                  Anda tentang perlindungan laut dari sampah plastik. Dengan
+                  mengikuti quiz ini, Anda akan belajar lebih banyak tentang
+                  sumber utama sampah plastik, dampak negatifnya terhadap biota
+                  laut, serta langkah-langkah yang dapat diambil untuk
+                  mengurangi
+                </p>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="eco-marine-quiz.html"
+                  class="flex justify-center p-2 text-lg md:text-xl font-medium bg-sky-500 hover:bg-sky-400 transition ease-in-out duration-300"
+                  >Lihat</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="py-6">
+        <h2 class="text-3xl md:text-4xl font-light tracking-widest mb-6">
+          Tech Use
+        </h2>
+        <ul class="flex flex-col md:flex-row gap-10 flex-wrap">
+          <li class="p-4 md:pb-6 w-full md:w-96 border-2 border-sky-500">
+            <h3
+              class="text-2xl md:text-3xl border-b-2 border-sky-500 pb-1 font-semibold text-white"
+            >
+              Tailwind CSS
+            </h3>
+            <div class="mt-6">
+              <a
+                href="https://tailwindcss.com/"
+                target="_blank"
+                class="bg-sky-500 hover:bg-sky-400 transition ease-in-out duration-300 text-lg md:text-xl p-2"
+                >Documentation</a
+              >
+            </div>
+          </li>
+          <li class="p-4 md:pb-6 w-full md:w-96 border-2 border-sky-500">
+            <h3
+              class="text-2xl md:text-3xl border-b-2 border-sky-500 pb-1 font-semibold text-white"
+            >
+              Daisy UI
+            </h3>
+            <div class="mt-6">
+              <a
+                href="https://daisyui.com/"
+                target="_blank"
+                class="bg-sky-500 hover:bg-sky-400 transition ease-in-out duration-300 text-lg md:text-xl p-2"
+                >Documentation</a
+              >
+            </div>
+          </li>
+          <li class="p-4 md:pb-6 w-full md:w-96 border-2 border-sky-500">
+            <h3
+              class="text-2xl md:text-3xl border-b-2 border-sky-500 pb-1 font-semibold text-white"
+            >
+              AOS JS
+            </h3>
+            <div class="mt-6">
+              <a
+                href="https://michalsnik.github.io/aos/"
+                target="_blank"
+                class="bg-sky-500 hover:bg-sky-400 transition ease-in-out duration-300 text-lg md:text-xl p-2"
+                >Documentation</a
+              >
+            </div>
+          </li>
+          <li class="p-4 md:pb-6 w-full md:w-96 border-2 border-sky-500">
+            <h3
+              class="text-2xl md:text-3xl border-b-2 border-sky-500 pb-1 font-semibold text-white"
+            >
+              Chart.JS
+            </h3>
+            <div class="mt-6">
+              <a
+                href="https://www.chartjs.org/"
+                target="_blank"
+                class="bg-sky-500 hover:bg-sky-400 transition ease-in-out duration-300 text-lg md:text-xl p-2"
+                >Documentation</a
+              >
+            </div>
+          </li>
+          <li class="p-4 md:pb-6 w-full md:w-96 border-2 border-sky-500">
+            <h3
+              class="text-2xl md:text-3xl border-b-2 border-sky-500 pb-1 font-semibold text-white"
+            >
+              Swiper Js
+            </h3>
+            <div class="mt-6">
+              <a
+                href="https://swiperjs.com/"
+                target="_blank"
+                class="bg-sky-500 hover:bg-sky-400 transition ease-in-out duration-300 text-lg md:text-xl p-2"
+                >Documentation</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- about web end -->
+
+    <!-- contact start -->
+
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <div class="bg-dark px-7 md:px-16">
+      <footer class="footer py-10 text-base-content">
+        <nav>
+          <h6 class="footer-title">PAGES</h6>
+          <a href="index.html" class="link link-hover">Beranda</a>
+          <a href="tentang.html" class="link link-hover">Tentang</a>
+          <a href="profil.html" class="link link-hover">Profil</a>
+          <a href="kontak.html" class="link link-hover">Kontak</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">PUSTAKA BIRU</h6>
+          <a href="pilar-kehidupan-bumi.html" class="link link-hover"
+            >Pilar Kehidupan Bumi</a
+          >
+          <a href="dekonstruksi-kerusakan-laut.html" class="link link-hover"
+            >Dekonstruksi Kerusakan Laut</a
+          >
+          <a href="melindungi-ekosistem-bawah-laut.html" class="link link-hover"
+            >Melindungi Ekosistem Bawah Laut</a
+          >
+          <a href="pelangi-bawah-laut.html" class="link link-hover"
+            >Pelangi Bawah Laut</a
+          >
+        </nav>
+        <nav>
+          <h6 class="footer-title">FEATURE</h6>
+          <a href="ocea-plastic-tracker.html" class="link link-hover"
+            >Ocean Plastic Tracker</a
+          >
+          <a href="ocean-marine-simulation.html" class="link link-hover"
+            >Ocean Marine Simulator</a
+          >
+          <a href="eco-marine-quiz.html" class="link link-hover"
+            >Eco Marine Quiz</a
+          >
+        </nav>
+      </footer>
+      <footer class="footer py-4 text-base-content">
+        <aside class="items-center grid-flow-col">
+          <img src="src/img/logo.jpg" class="w-11 h-11 rounded-full" alt="" />
+          <p>
+            <span class="text-2xl font-medium">OCEANICA</span> <br />Marine
+            Ecosystem
+          </p>
+        </aside>
+        <nav class="md:place-self-center md:justify-self-end">
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/aryandrxx/" target="_blank"
+              ><i data-feather="instagram"> </i
+            ></a>
+            <a href="https://github.com/aryndraa" target="_blank"
+              ><i data-feather="github"> </i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100094456982384"
+              target="_blank"
+              ><i data-feather="facebook"> </i
+            ></a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    <!-- footer end -->
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 800,
+      });
+    </script>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

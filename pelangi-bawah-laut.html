@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav
+      class="fixed top-0 right-0 left-0 z-50 bg-bg shadow-lg px-6 md:px-24 py-4 lg:py-6 transform -translate-y-28 transition ease duration-500 text-font"
+      id="navbar"
+    >
+      <div class="hidden lg:flex items-center justify-between">
+        <div class="flex gap-8 items-center">
+          <a
+            href="index.html"
+            class="flex items-center gap-2 text-4xl font-semibold"
+          >
+            <img
+              src="src/img/logo.jpg"
+              class="w-12 rounded-full transition ease-in-out duration-300"
+              alt=""
+            />
+          </a>
+          <div class="flex items-center gap-1 text-2xl font-medium">
+            <details class="dropdown">
+              <summary
+                class="cursor-pointer hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >
+                Pustaka Biru
+              </summary>
+              <ul class="shadow-xl mt-9 bg-bg dropdown-content w-64">
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pilar-kehidupan-bumi.html">Pilar Kehidupan Bumi</a>
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="dekonstruksi-kerusakan-laut.html"
+                    >Dekonstruksi Kerusakan Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="melindungi-ekosistem-bawah-laut.html"
+                    >Melindungi Ekosistem Bawah Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pelangi-bawah-laut.html">Pelangi Bawah Laut</a>
+                </li>
+              </ul>
+            </details>
+
+            <a
+              href="ocea-plastic-tracker.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Tracker</a
+            >
+            <a
+              href="ocean-marine-simulation.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Simulation</a
+            >
+            <a
+              href="eco-marine-quiz.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Quiz</a
+            >
+          </div>
+        </div>
+        <div class="flex gap-8 items-center text-2xl font-medium text-font">
+          <div class="group relative">
+            <a href="index.html">
+              <i data-feather="home" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Beranda</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="tentang.html">
+              <i data-feather="info" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Tentang</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="profil.html">
+              <i data-feather="user" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Profil</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="kontak.html">
+              <i data-feather="mail" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Kontak</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="lg:hidden flex justify-between items-center">
+        <div>
+          <img src="src/img/logo.jpg" class="w-8 rounded-full" alt="" />
+        </div>
+        <div class="flex gap-4">
+          <a href="profil.html"><i data-feather="user"></i></a>
+          <a href="kontak.html"><i data-feather="mail"></i></a>
+          <button
+            id="menu-toggle"
+            class="text-font bg-trasnparent flex items-center font-medium gap-2 text-xl focus:outline-none"
+          >
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="lg:hidden hidden pt-6">
+        <a
+          href="index.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Beranda</a
+        >
+        <a
+          href="tentang.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tentang</a
+        >
+        <div class="relative">
+          <button
+            id="services-toggle-mobile"
+            class="block w-full text-left py-2 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25 focus:outline-none"
+          >
+            Daftar Baca
+          </button>
+          <div
+            id="services-dropdown-mobile"
+            class="top-full left-0 bg-gray-300 shadow bg-opacity-15 rounded-md py-2 mt-2 w-full hidden"
+          >
+            <a
+              href="pilar-kehidupan-bumi.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pilar Kehidupan Bumi</a
+            >
+            <a
+              href="dekonstruksi-kerusakan-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Dekonstruksi Kerusakan Laut</a
+            >
+            <a
+              href="melindungi-ekosistem-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Melindungi Ekosistem Bawah Laut</a
+            >
+            <a
+              href="pelangi-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pelangi Bawah Laut</a
+            >
+          </div>
+        </div>
+        <a
+          href="ocea-plastic-tracker.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tracker</a
+        >
+        <a
+          href="ocean-marine-simulation.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Simulation</a
+        >
+        <a
+          href="eco-marine-quiz.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Quiz</a
+        >
+      </div>
+      <button
+        class="absolute bottom-[-180%] md:bottom-[-90%] right-0 flex items-center justify-center bg-bg rounded-xl p-1 text-font mr-4"
+        onclick="scrollNav()"
+      >
+        <i
+          data-feather="chevron-down"
+          class="w-8 h-8 transform rotate-0 transition-transform duration-500"
+          id="btn-nav"
+        ></i>
+      </button>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    <section
+      class="min-h-screen flex items-end justify-center bg-[url('img/page-4/bg.jpg')] bg-fixed bg-blend-multiply bg-gray-400 bg-cover bg-center relative"
+    >
+      <div
+        class="min-h-[40vh] md:min-h-[35vh] py-7 bg-bg text-center flex flex-col w-full"
+      >
+        <h1
+          class="text-3xl md:text-5xl lg:text-7xl font-semibold mb-2 px-7 md:px-16 md:mb-4"
+          data-aos="fade-up"
+        >
+          Menyelami Pelangi Bawah Laut
+        </h1>
+        <p class="text-lg md:text-xl px-7 md:px-20" data-aos="fade-up">
+          mengeksplor pesona keindahaan keanekaragama hayati di bawah air
+        </p>
+        <div class="min-w-full absolute bottom-[38%] md:bottom-[34.5%]">
+          <img src="src/img/page-4/svg1.svg" alt="" class="w-full" />
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- materi start -->
+    <section
+      class="py-7 md:py-16 px-7 md:px-16 text-lg md:text-xl space-y-6 text-justify"
+    >
+      <p data-aos="fade-right">
+        Kehidupan laut merupakan sebuah ekosistem yang sangat kompleks dan penuh
+        dengan beragam makhluk hidup yang beradaptasi dengan lingkungan laut
+        mereka. Beragam kehidupan laut ini mencakup berbagai organisme, mulai
+        dari mikroorganisme yang tidak terlihat dengan mata telanjang, seperti
+        plankton, hingga makhluk raksasa seperti ikan paus dan hiu.
+      </p>
+      <p data-aos="fade-right" data-aos-delay="200">
+        Ada beberapa faktor yang mempengaruhi keberagaman kehidupan laut,
+        termasuk iklim, suhu air, kedalaman laut, tekanan, kadar garam, dan
+        ketersediaan makanan. Kehidupan laut juga sangat dipengaruhi oleh adanya
+        berbagai jenis habitat, seperti terumbu karang, hutan lamun, zona
+        pelagik, dan dasar laut yang dalam.
+      </p>
+      <p data-aos="fade-right" data-aos-delay="400">
+        Organisme laut juga memiliki beragam strategi adaptasi untuk bertahan
+        hidup di lingkungan laut yang keras. Contohnya, beberapa spesies
+        memiliki kemampuan untuk bertahan hidup di dalam air asin, sementara
+        yang lain memiliki kemampuan untuk hidup di kedalaman yang sangat dalam
+        di mana cahaya matahari tidak dapat menembus. Selain itu, banyak spesies
+        laut juga memiliki hubungan simbiosis atau saling menguntungkan dengan
+        organisme lain, yang membantu dalam kelangsungan hidup mereka.
+      </p>
+    </section>
+    <!-- materi end -->
+
+    <!-- quote start -->
+    <section
+      class="min-h-[40vh] md:min-h-[50vh] bg-[url('img/page-4/bg1.jpg')] bg-fixed bg-cover bg-center bg-blend-multiply bg-gray-500 flex items-center"
+    >
+      <div
+        class="mx-7 md:mx-16 space-y-2 md:space-y-4 lg:space-y-6"
+        data-aos="fade-up"
+      >
+        <h1 class="text-2xl md:text-4xl lg:text-5xl font-medium italic text-bg">
+          "Kita tidak bisa memahami dunia jika kita hanya memandangnya dari
+          daratan, kita harus melihatnya dari laut."
+        </h1>
+        <p class="text-lg md:text-xl font-semibold text-primary">
+          -Jacques-Yves Cousteau-
+        </p>
+      </div>
+    </section>
+    <!-- quote end -->
+
+    <!-- spesies start -->
+    <section class="py-7 px-7 md:py-24 md:px-16 bg-primary">
+      <h1
+        class="text-3xl md:text-5xl font-semibold text-center my-10 md:my-14"
+        data-aos="fade-up"
+      >
+        Beragam kehidupan bawah air
+      </h1>
+      <div
+        class="space-y-6 lg:space-y-0 lg:gap-10 lg:flex flex-wrap justify-center"
+      >
+        <div
+          class="bg-white shadow-lg rounded-box max-w-full lg:max-w-96"
+          data-aos="zoom-in"
+        >
+          <div
+            class="px-5 md:px-8 py-3 md:py-6 flex justify-between items-center"
+          >
+            <p class="text-lg md:text-3xl">1</p>
+            <h2 class="text-xl md:text-3xl font-medium">IKAN</h2>
+          </div>
+          <div class="max-w-full">
+            <img src="src/img/page-4/picture1.jpg" alt="" class="w-full" />
+          </div>
+          <div class="py-5 md:px-8 px-5 md:py-6">
+            <p class="text-lg md:text-xl">
+              Jenis ikan di laut sangatlah beragam, mulai dari ikan kecil
+              seperti sejenis ikan-ikan karang hingga ikan raksasa seperti hiu
+              paus.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white shadow-lg rounded-box max-w-full lg:max-w-96"
+          data-aos="zoom-in"
+        >
+          <div
+            class="px-5 md:px-8 py-3 md:py-6 flex justify-between items-center"
+          >
+            <p class="text-lg md:text-3xl">2</p>
+            <h2 class="text-xl md:text-3xl font-medium">KARANG</h2>
+          </div>
+          <div class="max-w-full">
+            <img src="src/img/page-4/picture2.jpg" alt="" class="w-full" />
+          </div>
+          <div class="py-5 md:px-8 px-5 md:py-6">
+            <p class="text-lg md:text-xl">
+              karang adalah invertebrata laut yang termasuk dalam kelas Anthozoa
+              dari filum Cnidaria. Mereka biasanya hidup dalam koloni yang padat
+              dari banyak polip individu yang identik
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white shadow-lg rounded-box max-w-full lg:max-w-96"
+          data-aos="zoom-in"
+        >
+          <div
+            class="px-5 md:px-8 py-3 md:py-6 flex justify-between items-center"
+          >
+            <p class="text-lg md:text-3xl">3</p>
+            <h2 class="text-xl md:text-3xl font-medium">MAMALIA LAUT</h2>
+          </div>
+          <div class="max-w-full">
+            <img src="src/img/page-4/picture3.jpg" alt="" class="w-full" />
+          </div>
+          <div class="py-5 md:px-8 px-5 md:py-6">
+            <p class="text-lg md:text-xl">
+              Mamalia laut adalah mamalia yang bergantung pada samudra untuk
+              bertahan hidup. Tingkat kebergantungan pada lingkungan laut
+              berbeda pada masing-masing spesies. Misalnya, lumba-lumba dan paus
+              sepenuhnya bergantung pada laut selama hidupnya, sementara anjing
+              laut makan di samudra, tetapi berkembang biak di darat.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white shadow-lg rounded-box max-w-full lg:max-w-96"
+          data-aos="zoom-in"
+        >
+          <div
+            class="px-5 md:px-8 py-3 md:py-6 flex justify-between items-center"
+          >
+            <p class="text-lg md:text-3xl">4</p>
+            <h2 class="text-xl md:text-3xl font-medium">CNIDARIA</h2>
+          </div>
+          <div class="max-w-full">
+            <img src="src/img/page-4/picture4.jpg" alt="" class="w-full" />
+          </div>
+          <div class="py-5 md:px-8 px-5 md:py-6">
+            <p class="text-lg md:text-xl">
+              Cnidaria adalah sebuah filum yang terdiri dari lebih dari 10.000
+              spesies hewan sederhana yang hanya ditemukan di perairan,
+              kebanyakan lingkungan laut. Dari sudut etimologi, kata Cnidaria
+              berasal dari bahasa Yunani "cnidos" yang berarti "jarum
+              penyengat".
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white shadow-lg rounded-box max-w-full lg:max-w-96"
+          data-aos="zoom-in"
+        >
+          <div
+            class="px-5 md:px-8 py-3 md:py-6 flex justify-between items-center"
+          >
+            <p class="text-lg md:text-3xl">5</p>
+            <h2 class="text-xl md:text-3xl font-medium">MOLUSKA</h2>
+          </div>
+          <div class="max-w-full">
+            <img src="src/img/page-4/picture5.jpg" alt="" class="w-full" />
+          </div>
+          <div class="py-5 md:px-8 px-5 md:py-6">
+            <p class="text-lg md:text-xl">
+              Moluska merupakan hewan triploblastik selomata yang bertubuh
+              lunak. Ke dalamnya termasuk semua hewan lunak dengan maupun tanpa
+              cangkang, seperti berbagai jenis siput, kiton, kerang-kerangan,
+              serta cumi-cumi dan kerabatnya. Moluska merupakan filum terbesar
+              kedua dalam kerajaan binatang setelah filum Arthropoda.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white shadow-lg rounded-box max-w-full lg:max-w-96"
+          data-aos="zoom-in"
+        >
+          <div
+            class="px-5 md:px-8 py-3 md:py-6 flex justify-between items-center"
+          >
+            <p class="text-lg md:text-3xl">6</p>
+            <h2 class="text-xl md:text-3xl font-medium">ARTROPODA</h2>
+          </div>
+          <div class="max-w-full">
+            <img src="src/img/page-4/picture6.jpg" alt="" class="w-full" />
+          </div>
+          <div class="py-5 md:px-8 px-5 md:py-6">
+            <p class="text-lg md:text-xl">
+              Artropoda adalah filum yang paling besar dalam dunia hewan dan
+              mencakup serangga, laba-laba, udang, lipan, dan hewan sejenis
+              lainnya. Artropoda biasa ditemukan di laut, air tawar, darat, dan
+              lingkungan udara, termasuk berbagai bentuk simbiosis dan parasit.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white shadow-lg rounded-box max-w-full lg:max-w-96"
+          data-aos="zoom-in"
+        >
+          <div
+            class="px-5 md:px-8 py-3 md:py-6 flex justify-between items-center"
+          >
+            <p class="text-lg md:text-3xl">7</p>
+            <h2 class="text-xl md:text-3xl font-medium">MIKROORGANISME</h2>
+          </div>
+          <div class="max-w-full">
+            <img src="src/img/page-4/picture7.jpg" alt="" class="w-full" />
+          </div>
+          <div class="py-5 md:px-8 px-5 md:py-6">
+            <p class="text-lg md:text-xl">
+              Mikroorganisme laut adalah organisme kecil yang hidup di
+              lingkungan air laut. Mereka terdiri dari berbagai jenis, termasuk
+              bakteri, virus, protista (seperti fitoplankton dan zooplankton),
+              dan fungi. Meskipun ukurannya kecil, mikroorganisme laut memainkan
+              peran yang sangat penting dalam ekosistem laut dan dalam berbagai
+              proses biogeokimia.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white shadow-lg rounded-box max-w-full lg:max-w-96"
+          data-aos="zoom-in"
+        >
+          <div
+            class="px-5 md:px-8 py-3 md:py-6 flex justify-between items-center"
+          >
+            <p class="text-lg md:text-3xl">8</p>
+            <h2 class="text-xl md:text-3xl font-medium">INVERTEBRATA</h2>
+          </div>
+          <div class="max-w-full">
+            <img src="src/img/page-4/picture8.jpg" alt="" class="w-full" />
+          </div>
+          <div class="py-5 md:px-8 px-5 md:py-6">
+            <p class="text-lg md:text-xl">
+              Invertebrata laut adalah kelompok hewan yang tidak memiliki tulang
+              belakang dan hidup di lingkungan air laut. Mereka mencakup beragam
+              spesies yang beraneka ragam bentuk, ukuran, dan perilaku.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white shadow-lg rounded-box max-w-full lg:max-w-96"
+          data-aos="zoom-in"
+        >
+          <div
+            class="px-5 md:px-8 py-3 md:py-6 flex justify-between items-center"
+          >
+            <p class="text-lg md:text-3xl">9</p>
+            <h2 class="text-xl md:text-3xl font-medium">TUMBUHAN</h2>
+          </div>
+          <div class="max-w-full">
+            <img src="src/img/page-4/picture9.jpg" alt="" class="w-full" />
+          </div>
+          <div class="py-5 md:px-8 px-5 md:py-6">
+            <p class="text-lg md:text-xl">
+              Tumbuhan laut, juga dikenal sebagai alga laut, adalah kelompok
+              organisme fotosintetik yang hidup di lingkungan air laut. Mereka
+              mencakup berbagai jenis, dari yang mikroskopis hingga yang
+              makroskopis, dan dapat ditemukan di berbagai habitat laut, mulai
+              dari perairan dangkal hingga kedalaman yang dalam.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white shadow-lg rounded-box max-w-full lg:max-w-96"
+          data-aos="zoom-in"
+        >
+          <div
+            class="px-5 md:px-8 py-3 md:py-6 flex justify-between items-center"
+          >
+            <p class="text-lg md:text-3xl">10</p>
+            <h2 class="text-xl md:text-3xl font-medium">PLANKTON</h2>
+          </div>
+          <div class="max-w-full">
+            <img src="src/img/page-4/picture10.jpg" alt="" class="w-full" />
+          </div>
+          <div class="py-5 md:px-8 px-5 md:py-6">
+            <p class="text-lg md:text-xl">
+              Plankton adalah kumpulan organisme mikroskopis yang melayang di
+              perairan, tidak mampu berenang secara aktif melawan arus. Istilah
+              "plankton" berasal dari bahasa Yunani, yang berarti "pengembara"
+              atau "orang yang mengapung", yang sesuai dengan sifat pasif
+              pergerakan mereka di laut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- spesies end -->
+
+    <!-- footer start -->
+    <div class="bg-dark px-7 md:px-16">
+      <footer class="footer py-10 text-base-content">
+        <nav>
+          <h6 class="footer-title">PAGES</h6>
+          <a href="index.html" class="link link-hover">Beranda</a>
+          <a href="tentang.html" class="link link-hover">Tentang</a>
+          <a href="profil.html" class="link link-hover">Profil</a>
+          <a href="kontak.html" class="link link-hover">Kontak</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">PUSTAKA BIRU</h6>
+          <a href="pilar-kehidupan-bumi.html" class="link link-hover"
+            >Pilar Kehidupan Bumi</a
+          >
+          <a href="dekonstruksi-kerusakan-laut.html" class="link link-hover"
+            >Dekonstruksi Kerusakan Laut</a
+          >
+          <a href="melindungi-ekosistem-bawah-laut.html" class="link link-hover"
+            >Melindungi Ekosistem Bawah Laut</a
+          >
+          <a href="pelangi-bawah-laut.html" class="link link-hover"
+            >Pelangi Bawah Laut</a
+          >
+        </nav>
+        <nav>
+          <h6 class="footer-title">FEATURE</h6>
+          <a href="ocea-plastic-tracker.html" class="link link-hover"
+            >Ocean Plastic Tracker</a
+          >
+          <a href="ocean-marine-simulation.html" class="link link-hover"
+            >Ocean Marine Simulator</a
+          >
+          <a href="eco-marine-quiz.html" class="link link-hover"
+            >Eco Marine Quiz</a
+          >
+        </nav>
+      </footer>
+      <footer class="footer py-4 text-base-content">
+        <aside class="items-center grid-flow-col">
+          <img src="src/img/logo.jpg" class="w-11 h-11 rounded-full" alt="" />
+          <p>
+            <span class="text-2xl font-medium">OCEANICA</span> <br />Marine
+            Ecosystem
+          </p>
+        </aside>
+        <nav class="md:place-self-center md:justify-self-end">
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/aryandrxx/" target="_blank"
+              ><i data-feather="instagram"> </i
+            ></a>
+            <a href="https://github.com/aryndraa" target="_blank"
+              ><i data-feather="github"> </i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100094456982384"
+              target="_blank"
+              ><i data-feather="facebook"> </i
+            ></a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    <!-- footer end -->
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 800,
+      });
+    </script>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

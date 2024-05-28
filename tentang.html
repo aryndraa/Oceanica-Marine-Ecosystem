@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oceanica | Tentang</title>
+
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav
+      class="fixed top-0 right-0 left-0 z-50 bg-bg shadow-lg px-6 md:px-24 py-4 lg:py-6 transform -translate-y-28 transition ease duration-500 text-font"
+      id="navbar"
+    >
+      <div class="hidden lg:flex items-center justify-between">
+        <div class="flex gap-8 items-center">
+          <a
+            href="index.html"
+            class="flex items-center gap-2 text-4xl font-semibold"
+          >
+            <img
+              src="src/img/logo.jpg"
+              class="w-12 rounded-full transition ease-in-out duration-300"
+              alt=""
+            />
+          </a>
+          <div class="flex items-center gap-1 text-2xl font-medium">
+            <details class="dropdown">
+              <summary
+                class="cursor-pointer hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >
+                Pustaka Biru
+              </summary>
+              <ul class="shadow-xl mt-9 bg-bg dropdown-content w-64">
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pilar-kehidupan-bumi.html">Pilar Kehidupan Bumi</a>
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="dekonstruksi-kerusakan-laut.html"
+                    >Dekonstruksi Kerusakan Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="melindungi-ekosistem-bawah-laut.html"
+                    >Melindungi Ekosistem Bawah Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pelangi-bawah-laut.html">Pelangi Bawah Laut</a>
+                </li>
+              </ul>
+            </details>
+
+            <a
+              href="ocea-plastic-tracker.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Tracker</a
+            >
+            <a
+              href="ocean-marine-simulation.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Simulation</a
+            >
+            <a
+              href="eco-marine-quiz.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Quiz</a
+            >
+          </div>
+        </div>
+        <div class="flex gap-8 items-center text-2xl font-medium text-font">
+          <div class="group relative">
+            <a href="index.html">
+              <i data-feather="home" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Beranda</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="tentang.html">
+              <i data-feather="info" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Tentang</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="profil.html">
+              <i data-feather="user" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Profil</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="kontak.html">
+              <i data-feather="mail" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Kontak</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="lg:hidden flex justify-between items-center">
+        <div>
+          <img src="src/img/logo.jpg" class="w-8 rounded-full" alt="" />
+        </div>
+        <div class="flex gap-4">
+          <a href="profil.html"><i data-feather="user"></i></a>
+          <a href="kontak.html"><i data-feather="mail"></i></a>
+          <button
+            id="menu-toggle"
+            class="text-font bg-trasnparent flex items-center font-medium gap-2 text-xl focus:outline-none"
+          >
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="lg:hidden hidden pt-6">
+        <a
+          href="index.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Beranda</a
+        >
+        <a
+          href="tentang.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tentang</a
+        >
+        <div class="relative">
+          <button
+            id="services-toggle-mobile"
+            class="block w-full text-left py-2 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25 focus:outline-none"
+          >
+            Daftar Baca
+          </button>
+          <div
+            id="services-dropdown-mobile"
+            class="top-full left-0 bg-gray-300 shadow bg-opacity-15 rounded-md py-2 mt-2 w-full hidden"
+          >
+            <a
+              href="pilar-kehidupan-bumi.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pilar Kehidupan Bumi</a
+            >
+            <a
+              href="dekonstruksi-kerusakan-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Dekonstruksi Kerusakan Laut</a
+            >
+            <a
+              href="melindungi-ekosistem-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Melindungi Ekosistem Bawah Laut</a
+            >
+            <a
+              href="pelangi-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pelangi Bawah Laut</a
+            >
+          </div>
+        </div>
+        <a
+          href="ocea-plastic-tracker.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tracker</a
+        >
+        <a
+          href="ocean-marine-simulation.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Simulation</a
+        >
+        <a
+          href="eco-marine-quiz.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Quiz</a
+        >
+      </div>
+      <button
+        class="absolute bottom-[-180%] md:bottom-[-90%] right-0 flex items-center justify-center bg-bg rounded-xl p-1 text-font mr-4"
+        onclick="scrollNav()"
+      >
+        <i
+          data-feather="chevron-down"
+          class="w-8 h-8 transform rotate-0 transition-transform duration-500"
+          id="btn-nav"
+        ></i>
+      </button>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    <section class="min-h-screen lg:flex flex-row gap-10 items-center">
+      <div
+        class="pt-24 lg:py-24 bg-bg lg:flex-1 px-7 md:px-16 md:text-center lg:text-start"
+        data-aos="fade-right"
+      >
+        <h1 class="text-3xl md:text-7xl font-bold mb-1 md:mb-6">
+          Media Edukasi Digital
+        </h1>
+        <p class="text-lg md:text-2xl font-normal mb-4 md:mb-10">
+          Memberikan edukasi kepada masyarakat tentang dampak sampah di laut
+        </p>
+      </div>
+      <div
+        class="relative lg:flex-1 lg:bg-[url('img/tentang/herobg.jpg')] bg-blend-multiply bg-gray-300 lg:w-[50%] lg:h-screen bg-cover bg-right pointer-events-none"
+      >
+        <img
+          src="src/img/tentang/herobg1.jpg"
+          alt=""
+          class="w-screen lg:hidden"
+        />
+        <img
+          src="src/img/tentang/svg1.svg"
+          alt=""
+          class="absolute top-[-1%] w-screen lg:hidden pointer-events-none"
+        />
+        <img
+          src="src/img/tentang/svg2.svg"
+          alt=""
+          class="absolute bottom-[-1%] w-screen lg:hidden pointer-events-none"
+        />
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- visi start -->
+    <div
+      class="py-14 lg:py-32 px-7 md:px-16 lg:px-36 text-center"
+      data-aos="fade-up"
+    >
+      <h1 class="text-lg md:text-3xl font-semibold mb-2 md:mb-5">
+        -Visi Oceanica-
+      </h1>
+      <h2 class="text-2xl md:text-7xl font-bold italic">
+        Lautan yang bebas dari berbagi sampah untuk masa depan bumi
+      </h2>
+    </div>
+    <!-- visi end -->
+
+    <!-- misi start -->
+    <section class="bg-primary relative">
+      <div class="px-7 md:px-16 py-24 md:py-32">
+        <h1
+          class="text-3xl md:text-5xl font-semibold mb-6 md:mb-12"
+          data-aos="fade-right"
+        >
+          -Misi Oceanica-
+        </h1>
+        <div class="flex flex-col lg:flex-row justify-center gap-2 md:gap-5">
+          <div class="flex gap-2 md:gap-5">
+            <div class="bg-white rounded-md" data-aos="zoom-in">
+              <div class="p-4 lg:p-6">
+                <p class="text-lg md:text-2xl font-medium">
+                  Mengedukasi Masyarakat tentang dampak sampah untuk laut.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-md"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="p-4 lg:p-6">
+                <p class="text-lg md:text-2xl font-medium">
+                  Menginspirasi tindakan dalam menjaga keberlanjutan ekosistem
+                  laut.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex">
+            <div
+              class="w-full bg-white rounded-lg"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="p-4 lg:p-6">
+                <p class="text-lg md:text-2xl font-medium">
+                  Mendorong partisipasi masyarakat dalam upaya pelsetarian
+                  lingkungan laut.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute pointer-events-none top-0">
+        <img src="src/img/tentang/svg3.svg" alt="" class="w-screen" />
+      </div>
+    </section>
+    <!-- misi end -->
+
+    <!-- footer start -->
+    <div class="bg-dark px-7 md:px-16">
+      <footer class="footer py-10 text-base-content">
+        <nav>
+          <h6 class="footer-title">PAGES</h6>
+          <a href="index.html" class="link link-hover">Beranda</a>
+          <a href="tentang.html" class="link link-hover">Tentang</a>
+          <a href="profil.html" class="link link-hover">Profil</a>
+          <a href="kontak.html" class="link link-hover">Kontak</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">PUSTAKA BIRU</h6>
+          <a href="pilar-kehidupan-bumi.html" class="link link-hover"
+            >Pilar Kehidupan Bumi</a
+          >
+          <a href="dekonstruksi-kerusakan-laut.html" class="link link-hover"
+            >Dekonstruksi Kerusakan Laut</a
+          >
+          <a href="melindungi-ekosistem-bawah-laut.html" class="link link-hover"
+            >Melindungi Ekosistem Bawah Laut</a
+          >
+          <a href="pelangi-bawah-laut.html" class="link link-hover"
+            >Pelangi Bawah Laut</a
+          >
+        </nav>
+        <nav>
+          <h6 class="footer-title">FEATURE</h6>
+          <a href="ocea-plastic-tracker.html" class="link link-hover"
+            >Ocean Plastic Tracker</a
+          >
+          <a href="ocean-marine-simulation.html" class="link link-hover"
+            >Ocean Marine Simulator</a
+          >
+          <a href="eco-marine-quiz.html" class="link link-hover"
+            >Eco Marine Quiz</a
+          >
+        </nav>
+      </footer>
+      <footer class="footer py-4 text-base-content">
+        <aside class="items-center grid-flow-col">
+          <img src="src/img/logo.jpg" class="w-11 h-11 rounded-full" alt="" />
+          <p>
+            <span class="text-2xl font-medium">OCEANICA</span> <br />Marine
+            Ecosystem
+          </p>
+        </aside>
+        <nav class="md:place-self-center md:justify-self-end">
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/aryandrxx/" target="_blank"
+              ><i data-feather="instagram"> </i
+            ></a>
+            <a href="https://github.com/aryndraa" target="_blank"
+              ><i data-feather="github"> </i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100094456982384"
+              target="_blank"
+              ><i data-feather="facebook"> </i
+            ></a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    <!-- footer end -->
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+    </script>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

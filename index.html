@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oceanica | Beranda</title>
+
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="src/output.css" />
+    <style>
+      .scrollable-list {
+        overflow-x: auto;
+        scrollbar-width: 20px;
+        scrollbar-color: #fff transparent;
+      }
+
+      .scrollable-list::-webkit-scrollbar {
+        height: 10px;
+      }
+
+      .scrollable-list::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      .scrollable-list::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 10px;
+        border: 2px dashed transparent;
+      }
+
+      .scrollable-list::-webkit-scrollbar-thumb:hover {
+        background-color: transparent;
+      }
+    </style>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- navbar start -->
+    <nav
+      class="fixed top-0 right-0 left-0 z-50 bg-bg shadow-lg px-6 md:px-24 py-4 lg:py-6 transform -translate-y-28 transition ease duration-500 text-font"
+      id="navbar"
+    >
+      <div class="hidden lg:flex items-center justify-between">
+        <div class="flex gap-8 items-center">
+          <a
+            href="index.html"
+            class="flex items-center gap-2 text-4xl font-semibold"
+          >
+            <img
+              src="src/img/logo.jpg"
+              class="w-12 rounded-full transition ease-in-out duration-300"
+              alt=""
+            />
+          </a>
+          <div class="flex items-center gap-1 text-2xl font-medium">
+            <details class="dropdown">
+              <summary
+                class="cursor-pointer hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >
+                Pustaka Biru
+              </summary>
+              <ul class="shadow-xl mt-9 bg-bg dropdown-content w-64">
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pilar-kehidupan-bumi.html">Pilar Kehidupan Bumi</a>
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="dekonstruksi-kerusakan-laut.html"
+                    >Dekonstruksi Kerusakan Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="melindungi-ekosistem-bawah-laut.html"
+                    >Melindungi Ekosistem Bawah Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pelangi-bawah-laut.html">Pelangi Bawah Laut</a>
+                </li>
+              </ul>
+            </details>
+
+            <a
+              href="ocea-plastic-tracker.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Tracker</a
+            >
+            <a
+              href="ocean-marine-simulation.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Simulation</a
+            >
+            <a
+              href="eco-marine-quiz.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Quiz</a
+            >
+          </div>
+        </div>
+        <div class="flex gap-8 items-center text-2xl font-medium text-font">
+          <div class="group relative">
+            <a href="index.html">
+              <i data-feather="home" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Beranda</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="tentang.html">
+              <i data-feather="info" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Tentang</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="profil.html">
+              <i data-feather="user" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Profil</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="kontak.html">
+              <i data-feather="mail" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Kontak</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="lg:hidden flex justify-between items-center">
+        <div>
+          <img src="src/img/logo.jpg" class="w-8 rounded-full" alt="" />
+        </div>
+        <div class="flex gap-4">
+          <a href="profil.html"><i data-feather="user"></i></a>
+          <a href="kontak.html"><i data-feather="mail"></i></a>
+          <button
+            id="menu-toggle"
+            class="text-font bg-trasnparent flex items-center font-medium gap-2 text-xl focus:outline-none"
+          >
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="lg:hidden hidden pt-6">
+        <a
+          href="index.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Beranda</a
+        >
+        <a
+          href="tentang.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tentang</a
+        >
+        <div class="relative">
+          <button
+            id="services-toggle-mobile"
+            class="block w-full text-left py-2 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25 focus:outline-none"
+          >
+            Daftar Baca
+          </button>
+          <div
+            id="services-dropdown-mobile"
+            class="top-full left-0 bg-gray-300 shadow bg-opacity-15 rounded-md py-2 mt-2 w-full hidden"
+          >
+            <a
+              href="pilar-kehidupan-bumi.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pilar Kehidupan Bumi</a
+            >
+            <a
+              href="dekonstruksi-kerusakan-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Dekonstruksi Kerusakan Laut</a
+            >
+            <a
+              href="melindungi-ekosistem-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Melindungi Ekosistem Bawah Laut</a
+            >
+            <a
+              href="pelangi-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pelangi Bawah Laut</a
+            >
+          </div>
+        </div>
+        <a
+          href="ocea-plastic-tracker.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tracker</a
+        >
+        <a
+          href="ocean-marine-simulation.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Simulation</a
+        >
+        <a
+          href="eco-marine-quiz.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Quiz</a
+        >
+      </div>
+      <button
+        class="absolute bottom-[-180%] md:bottom-[-90%] right-0 flex items-center justify-center bg-bg rounded-xl p-1 text-font mr-4"
+        onclick="scrollNav()"
+        data-aos="fade-down"
+      >
+        <i
+          data-feather="chevron-down"
+          class="w-8 h-8 transform transition-transform duration-500 rotate-0"
+          id="btn-nav"
+        ></i>
+      </button>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- titlw start -->
+    <section
+      class="relative hidden md:flex overflow-hidden min-h-[100vh] justify-center bg-gradient-to-t from-white to-sky-400 items-center bg-bottom bg-no-repeat bg-fixed"
+    >
+      <img
+        src="src/img/bg-svg/Group 66.png"
+        alt=""
+        class="layer1 absolute w-[100%] h-[35%] md:h-[40%] lg:h-[55%] bottom-[2%] md:bottom-0 pointer-events-none"
+      />
+      <div class="flex justify-center">
+        <div
+          class="text-center absolute top-1/2 left-1/2 transformn -translate-x-1/2 -translate-y-1/2 drop-shadow-lg"
+          id="OceanicaTitle"
+        >
+          <h1
+            class="text-5xl md:text-8xl lg:text-9xl font-bold tracking-widest leading-none text-white"
+            id="OceanicaTitle"
+          >
+            OCEANICA
+          </h1>
+          <h2
+            class="text-2xl md:text-4xl font-medium text-white tracking-wider"
+          >
+            Marine Ecosystem
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- layer-->
+    <img
+      src="src/img/bg-svg/Vector.png"
+      alt=""
+      class="hidden lg:block absolute min-w-full bottom-[0%] md:bottom-[-2%] h-[10%] md:h-[20%] z-10 pointer-events-none"
+    />
+
+    <!-- bubble -->
+    <div
+      class="absolute top-[100%] left-[5%] w-[30px] md:w-[80px] h-[30px] md:h-[80px] bg-cover bg-[url('img/bg-svg/bub.png')] rounded-[50%] bub1 pointer-events-none"
+    ></div>
+    <div
+      class="absolute top-[100%] left-[30%] w-[30px] h-[30px] bg-cover bg-[url('img/bg-svg/bub.png')] rounded-[50%] bub2 pointer-events-none"
+    ></div>
+    <div
+      class="absolute top-[90%] left-[50%] w-[50px] md:w-[75px] h-[50px] md:h-[75px] bg-cover bg-[url('img/bg-svg/bub.png')] rounded-[50%] bub3 pointer-events-none"
+    ></div>
+    <div
+      class="absolute top-[90%] left-[80%] w-[40px] md:w-[50px] h-[40px] md:h-[50px] bg-cover bg-[url('img/bg-svg/bub.png')] rounded-[50%] bub4 pointer-events-none"
+    ></div>
+    <div
+      class="absolute top-[90%] left-[95%] w-[40px] h-[40px] bg-cover bg-[url('img/bg-svg/bub.png')] rounded-[50%] delay-[3s] bub5 pointer-events-none"
+    ></div>
+
+    <!-- title end -->
+
+    <!-- hero start -->
+    <section
+      class="min-h-screen relative flex items-center bg-[url('img/home/bg.jpg')] bg-center bg-cover bg-no-repeat bg-blend-multiply bg-dark/50"
+    >
+      <div class="px-7 md:px-16 text-white max-w-full italic">
+        <div class="mb-8" data-aos="fade-right">
+          <h2 class="text-3xl md:text-5xl font-medium mb-2">Welcome To</h2>
+          <h1
+            class="text-5xl md:text-8xl mb-2 font-semibold text-primary tracking-widest"
+          >
+            OCEANICA
+          </h1>
+          <p class="text-lg md:text-xl font-normal lg:w-[50%]">
+            Media edukasi digital tentang ekosistem laut, dengan berbagi fitur
+            menarik yang dapat memberikan pengetahuan tentang mengurangi sampah
+            di laut untuk keberlangsungan bumi.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-5" data-aos="fade-up">
+          <a
+            class="bg-bg/40 hover:bg-bg/80 transition ease-in-out duration-300` backdrop-blur-lg p-4 py-2 font-medium rounded-xl text-lg md:text-xl outline-none text-center"
+            href="#tentang"
+          >
+            Baca Selengkapnya
+          </a>
+        </div>
+        <div class="bg-sky-500 min-w-max">
+          <img
+            class="absolute bottom-[-2%] lg:bottom-[-5%] w-[100%] left-1/2 transform -translate-x-1/2 pointer-events-none"
+            src="src/img/home/svg1.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- about start-->
+    <section class="py-24 px-7 md:px-16" id="tentang">
+      <h1 class="text-5xl md:text-8xl font-semibold mb-4 md:mb-5 lg:mb-6">
+        Tentang
+      </h1>
+      <div class="space-y-4 md:space-y-6 text-lg md:text-xl lg:w-[60%]">
+        <p>
+          <span class="text-3xl font-medium pr-3">Halo Semuanya!</span>, tau kah
+          kamu dampak yang disebabkan akibat ekosistem laut yang rusak??
+          Pastinya akan menyebabkan kerusakan bagi kehidupan di darat. Untuk
+          mengatasi hal itu terjadi, perlunya kita memahami bagaimana
+          sampah-sampah yang terbuang ke laut berdampak bagi lautan
+        </p>
+        <p>
+          Oceanica memberikan media edukasi berbasis digital yang membantu kamu
+          memahami dampak dari sampah-sampah yang terbuang ke lautan lepas
+          mempengaruhi ekosistem di laut. dengan begitu, diharapkan agar kamu
+          dapat turut dalam menjaga ekosistem laut untuk keberlansungan bumi.
+        </p>
+        <div class="pt-5">
+          <a
+            href="tentang.html"
+            class="font-medium rounded-box flex items-center gap-4 text-2xl tracking-widest"
+            >Visi & Misi <i data-feather="arrow-right" class="w-8 h-8"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- about end-->
+
+    <!-- feature baca start -->
+    <section
+      class="py-24 md:py-48 max-w-full bg-blue-300 relative text-white"
+      id="pustaka-biru"
+    >
+      <div class="absolute pointer-events-none top-[-1%] min-w-full">
+        <img src="src/img/home/svg3.svg" alt="" class="w-full" />
+      </div>
+      <div class="flex flex-col md:flex-row justify-center">
+        <div class="mx-7 md:mx-16 mb-12" data-aos="fade-up">
+          <h2
+            class="text-white font-semibold text-3xl md:text-7xl mb-1 md:mb-4"
+          >
+            Pustaka Biru
+          </h2>
+          <p class="text-white font-normal text-lg md:text-xl">
+            Pustaka Biru adalah kumpulan artikel yang berisi penjelasan tentang
+            mamfaat, penyebab kerusakan, cara menjaga dan ke indahan lautan.
+          </p>
+        </div>
+
+        <div class="flex lg:max-w-[52rem] md:max-w-[30rem]" data-aos="fade-up">
+          <ul
+            class="flex wrapper overflow-x-auto touch-auto whitespace-nowrap scroll-smooth scrollable-list"
+          >
+            <li
+              class="overflow-hidden mx-2 cardItem list-none min-w-[280px] h-[380px] bg-[url('img/page-1/bg.jpg')] bg-cover bg-center bg-no-repeat py-8 px-4 rounded-lg bg-blend-multiply bg-gray-300 hover:bg-gray-500 transition ease-in-out duration-300"
+            >
+              <div class="text-center">
+                <h3
+                  class="text-white text-lg font-bold bg-primary p-2 bg-opacity-80 rounded-xl mb-2"
+                >
+                  Pilar Kehidupan Bumi
+                </h3>
+                <p class="text-white text-xl font-semibold text-wrap">
+                  Mengenal manfaat Laut bagi bumi.
+                </p>
+              </div>
+              <div class="flex justify-center mt-24">
+                <a
+                  href="pilar-kehidupan-bumi.html"
+                  class="btn text-white bg-primary/85 hover:bg-primary font-medium rounded-full text-lg p-2.5 text-center inline-flex items-center me-2 transition ease-in-out duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li
+              class="overflow-hidden mx-2 cardItem relative list-none min-w-[280px] h-[380px] bg-[url('img/page-2/herobg.jpg')] bg-cover bg-center bg-no-repeat py-8 px-4 rounded-lg bg-blend-multiply bg-gray-300 hover:bg-gray-500 transition ease-in-out duration-300"
+            >
+              <div class="text-center">
+                <h3
+                  class="text-white text-lg font-bold bg-primary p-2 bg-opacity-80 rounded-xl mb-2"
+                >
+                  Dekonstruksi Kerusakan Laut
+                </h3>
+                <p class="text-white text-xl font-semibold text-wrap">
+                  dampak sampah plastik di laut.
+                </p>
+              </div>
+              <div class="flex justify-center mt-24">
+                <a
+                  href="dekonstruksi-kerusakan-laut.html"
+                  class="btn text-white bg-primary/85 hover:bg-primary font-medium rounded-full text-lg p-2.5 text-center inline-flex items-center me-2 transition ease-in-out duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li
+              class="overflow-hidden mx-2 cardItem relative list-none min-w-[280px] h-[380px] bg-[url('img/page-3/herobg.jpg')] bg-cover bg-center bg-no-repeat py-8 px-4 rounded-lg bg-blend-multiply bg-gray-300 hover:bg-gray-500 transition ease-in-out duration-300"
+            >
+              <div class="text-center">
+                <h3
+                  class="text-white text-lg font-bold bg-primary p-2 bg-opacity-80 rounded-xl mb-2 text-wrap"
+                >
+                  Melindungi Ekosistem Bawah Laut
+                </h3>
+                <p class="text-white text-xl font-semibold text-wrap">
+                  Mengenal manfaat Laut bagi bumi.
+                </p>
+              </div>
+              <div class="flex justify-center mt-24">
+                <a
+                  href="melindungi-ekosistem-bawah-laut.html"
+                  class="btn text-white bg-primary/85 hover:bg-primary font-medium rounded-full text-lg p-2.5 text-center inline-flex items-center me-2 transition ease-in-out duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li
+              class="overflow-hidden mx-2 cardItem relative list-none min-w-[280px] h-[380px] bg-[url('img/page-4/bg.jpg')] bg-cover bg-center bg-no-repeat py-8 px-4 rounded-lg bg-blend-multiply bg-gray-300 hover:bg-gray-500 transition ease-in-out duration-300"
+            >
+              <div class="text-center">
+                <h3
+                  class="text-white text-lg font-bold bg-primary p-2 bg-opacity-80 rounded-xl mb-2"
+                >
+                  Pelangi Bawah Laut
+                </h3>
+                <p class="text-white text-xl font-semibold text-wrap">
+                  Keanekaragaman hayati di bawah air
+                </p>
+              </div>
+              <div class="flex justify-center mt-24">
+                <a
+                  href="pelangi-bawah-laut.html"
+                  class="btn text-white bg-primary/85 hover:bg-primary font-medium rounded-full text-lg p-2.5 text-center inline-flex items-center me-2 transition ease-in-out duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-12 md:pt-24 lg:pt-36 px-7 md:px-16">
+        <h2
+          class="text-3xl md:text-7xl font-medium mb-6 md:mb-16 text-center"
+          data-aos="fade-up"
+        >
+          Fun Feature
+        </h2>
+        <ul
+          class="flex flex-col lg:flex-row gap-10 md:gap-20 lg:justify-between"
+        >
+          <li class="flex-1" data-aos="zoom-in">
+            <div class="w-full flex flex-col items-center text-center">
+              <div class="max-w-60 md:max-w-md lg:max-w-none mb-4">
+                <img
+                  src="src/img/home/statistics.gif"
+                  alt=""
+                  class="w-full rounded-box"
+                />
+              </div>
+              <h2 class="text-2xl md:text-4xl font-medium">
+                Ocean Plastic Tracker
+              </h2>
+              <p class="text-base md:text-xl">
+                Lacak dampak dari penggunaan sampah plastik mu!
+              </p>
+              <div class="mt-5 md:mt-10">
+                <a
+                  href="ocea-plastic-tracker.html"
+                  class="bg-bg hover:bg-bg/75 transition ease-in-out duration-300 py-2 px-4 text-lg md:text-2xl text-font rounded-box font-medium"
+                  >Telusuri</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="flex-1" data-aos="zoom-in">
+            <div class="w-full flex flex-col items-center text-center">
+              <div class="max-w-60 md:max-w-md lg:max-w-none mb-4">
+                <img
+                  src="src/img/home/ocean.gif"
+                  alt=""
+                  class="w-full rounded-box"
+                />
+              </div>
+              <h2 class="text-2xl md:text-4xl font-medium">
+                Ocean Marine Simulator
+              </h2>
+              <p class="text-base md:text-xl">
+                Lihat Bagaimana polusi mempengaruhi lautan
+              </p>
+              <div class="mt-5 md:mt-10">
+                <a
+                  href="ocean-marine-simulation.html"
+                  class="bg-bg hover:bg-bg/75 transition ease-in-out duration-300 py-2 px-4 text-lg md:text-2xl text-font rounded-box font-medium"
+                  >Telusuri</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="flex-1" data-aos="zoom-in">
+            <div class="w-full flex flex-col items-center text-center">
+              <div class="max-w-60 md:max-w-md lg:max-w-none mb-4">
+                <img
+                  src="src/img/home/online-quiz.gif"
+                  alt=""
+                  class="w-full rounded-box"
+                />
+              </div>
+              <h2 class="text-2xl md:text-4xl font-medium">Eco Marine Quiz</h2>
+              <p class="text-base md:text-xl">
+                Uji pemahaman mu tentang cara menjaga ekosistem laut
+              </p>
+              <div class="mt-5 md:mt-10">
+                <a
+                  href="ocea-plastic-tracker.html"
+                  class="bg-bg hover:bg-bg/75 transition ease-in-out duration-300 py-2 px-4 text-lg md:text-2xl text-font rounded-box font-medium"
+                  >Telusuri</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="absolute min-w-full bottom-[-2%] pointer-events-none">
+        <img src="src/img/home/svg4.svg" alt="" class="w-full" />
+      </div>
+    </section>
+    <!-- feature baca end -->
+
+    <!-- feedback start  -->
+    <section
+      class="bg-dark px-7 py-24 text-center flex justify-center text-white"
+    >
+      <div class="lg:max-w-[60%]">
+        <h1 class="text-3xl md:text-7xl font-semibold mb-4">
+          Apa yang kamu pelajari hari ini?
+        </h1>
+        <p class="text-lg md:text-xl">
+          Dengan berbagai artikel semoga ini dapat membantu kamu memahami dampak
+          sampah bagi kehidupan laut.
+        </p>
+        <div class="mt-10">
+          <a
+            href="kontak.html"
+            class="bg-blue-300 font-medium px-4 py-2 text-xl md:text-2xl"
+            >Berikan Tanggapan Mu</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- feedback end  -->
+
+    <!-- footer start -->
+    <div class="bg-dark px-7 md:px-16">
+      <footer class="footer py-10 text-base-content">
+        <nav>
+          <h6 class="footer-title">PAGES</h6>
+          <a href="index.html" class="link link-hover">Beranda</a>
+          <a href="tentang.html" class="link link-hover">Tentang</a>
+          <a href="profil.html" class="link link-hover">Profil</a>
+          <a href="kontak.html" class="link link-hover">Kontak</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">PUSTAKA BIRU</h6>
+          <a href="pilar-kehidupan-bumi.html" class="link link-hover"
+            >Pilar Kehidupan Bumi</a
+          >
+          <a href="dekonstruksi-kerusakan-laut.html" class="link link-hover"
+            >Dekonstruksi Kerusakan Laut</a
+          >
+          <a href="melindungi-ekosistem-bawah-laut.html" class="link link-hover"
+            >Melindungi Ekosistem Bawah Laut</a
+          >
+          <a href="pelangi-bawah-laut.html" class="link link-hover"
+            >Pelangi Bawah Laut</a
+          >
+        </nav>
+        <nav>
+          <h6 class="footer-title">FEATURE</h6>
+          <a href="ocea-plastic-tracker.html" class="link link-hover"
+            >Ocean Plastic Tracker</a
+          >
+          <a href="ocean-marine-simulation.html" class="link link-hover"
+            >Ocean Marine Simulator</a
+          >
+          <a href="eco-marine-quiz.html" class="link link-hover"
+            >Eco Marine Quiz</a
+          >
+        </nav>
+      </footer>
+      <footer class="footer py-4 text-base-content">
+        <aside class="items-center grid-flow-col">
+          <img src="src/img/logo.jpg" class="w-11 h-11 rounded-full" alt="" />
+          <p>
+            <span class="text-2xl font-medium">OCEANICA</span> <br />Marine
+            Ecosystem
+          </p>
+        </aside>
+        <nav class="md:place-self-center md:justify-self-end">
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/aryandrxx/" target="_blank"
+              ><i data-feather="instagram"> </i
+            ></a>
+            <a href="https://github.com/aryndraa" target="_blank"
+              ><i data-feather="github"> </i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100094456982384"
+              target="_blank"
+              ><i data-feather="facebook"> </i
+            ></a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    <!-- footer end -->
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 800,
+      });
+      const title = document.getElementById("OceanicaTitle");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        title.style.marginTop = value * 0.8 + "px";
+      });
+    </script>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oceanica | DEKONTRUKSI KERUSAKAN LAUT</title>
+
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- navbar start -->
+    <nav
+      class="fixed top-0 right-0 left-0 z-50 bg-bg shadow-lg px-6 md:px-24 py-4 lg:py-6 transform -translate-y-28 transition ease duration-500 text-font"
+      id="navbar"
+    >
+      <div class="hidden lg:flex items-center justify-between">
+        <div class="flex gap-8 items-center">
+          <a
+            href="index.html"
+            class="flex items-center gap-2 text-4xl font-semibold"
+          >
+            <img
+              src="src/img/logo.jpg"
+              class="w-12 rounded-full transition ease-in-out duration-300"
+              alt=""
+            />
+          </a>
+          <div class="flex items-center gap-1 text-2xl font-medium">
+            <details class="dropdown">
+              <summary
+                class="cursor-pointer hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >
+                Pustaka Biru
+              </summary>
+              <ul class="shadow-xl mt-9 bg-bg dropdown-content w-64">
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pilar-kehidupan-bumi.html">Pilar Kehidupan Bumi</a>
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="dekonstruksi-kerusakan-laut.html"
+                    >Dekonstruksi Kerusakan Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="melindungi-ekosistem-bawah-laut.html"
+                    >Melindungi Ekosistem Bawah Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pelangi-bawah-laut.html">Pelangi Bawah Laut</a>
+                </li>
+              </ul>
+            </details>
+
+            <a
+              href="ocea-plastic-tracker.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Tracker</a
+            >
+            <a
+              href="ocean-marine-simulation.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Simulation</a
+            >
+            <a
+              href="eco-marine-quiz.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Quiz</a
+            >
+          </div>
+        </div>
+        <div class="flex gap-8 items-center text-2xl font-medium text-font">
+          <div class="group relative">
+            <a href="index.html">
+              <i data-feather="home" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Beranda</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="tentang.html">
+              <i data-feather="info" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Tentang</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="profil.html">
+              <i data-feather="user" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Profil</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="kontak.html">
+              <i data-feather="mail" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Kontak</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="lg:hidden flex justify-between items-center">
+        <div>
+          <img src="src/img/logo.jpg" class="w-8 rounded-full" alt="" />
+        </div>
+        <div class="flex gap-4">
+          <a href="profil.html"><i data-feather="user"></i></a>
+          <a href="kontak.html"><i data-feather="mail"></i></a>
+          <button
+            id="menu-toggle"
+            class="text-font bg-trasnparent flex items-center font-medium gap-2 text-xl focus:outline-none"
+          >
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="lg:hidden hidden pt-6">
+        <a
+          href="index.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Beranda</a
+        >
+        <a
+          href="tentang.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tentang</a
+        >
+        <div class="relative">
+          <button
+            id="services-toggle-mobile"
+            class="block w-full text-left py-2 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25 focus:outline-none"
+          >
+            Daftar Baca
+          </button>
+          <div
+            id="services-dropdown-mobile"
+            class="top-full left-0 bg-gray-300 shadow bg-opacity-15 rounded-md py-2 mt-2 w-full hidden"
+          >
+            <a
+              href="pilar-kehidupan-bumi.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pilar Kehidupan Bumi</a
+            >
+            <a
+              href="dekonstruksi-kerusakan-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Dekonstruksi Kerusakan Laut</a
+            >
+            <a
+              href="melindungi-ekosistem-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Melindungi Ekosistem Bawah Laut</a
+            >
+            <a
+              href="pelangi-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pelangi Bawah Laut</a
+            >
+          </div>
+        </div>
+        <a
+          href="ocea-plastic-tracker.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tracker</a
+        >
+        <a
+          href="ocean-marine-simulation.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Simulation</a
+        >
+        <a
+          href="eco-marine-quiz.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Quiz</a
+        >
+      </div>
+      <button
+        class="absolute bottom-[-180%] md:bottom-[-90%] right-0 flex items-center justify-center bg-bg rounded-xl p-1 text-font mr-4"
+        onclick="scrollNav()"
+      >
+        <i
+          data-feather="chevron-down"
+          class="w-8 h-8 transform rotate-0 transition-transform duration-500"
+          id="btn-nav"
+        ></i>
+      </button>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    <section
+      class="min-h-screen flex lg:items-center bg-[url('img/page-2/img11.svg')] lg:bg-none bg-no-repeat bg-[100%_90%] md:bg-[100%_90%] bg-[length:270px] md:bg-[length:450px]"
+    >
+      <div
+        class="px-7 md:px-16 flex flex-col lg:flex-row items-center lg:gap-10 relative pt-24 lg:pt-0"
+      >
+        <div class="">
+          <h1
+            class="text-3xl md:text-6xl font-bold mb-3 lg:mb-5"
+            data-aos="fade-right"
+          >
+            Dekonstruksi Kerusakan Lingkungan Lautan
+          </h1>
+          <p class="text-lg md:text-3xl" data-aos="fade-right">
+            Menganalisa penyabab dan dampak sampah plastik di laut
+          </p>
+        </div>
+        <div class="min-w-[50%] hidden lg:block">
+          <img src="src/img/page-2/img21.svg" alt="" class="w-full" />
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- penyebab start -->
+    <section class="px-7 md:px-16">
+      <h1
+        class="text-3xl md:text-5xl text-center font-semibold mb-5 md:mb-16"
+        data-aos="fade-up"
+      >
+        Penyebab rusaknya ekosistem laut
+      </h1>
+
+      <div
+        class="py-4 flex flex-wrap gap-5 md:gap-8 lg:gap-12 justify-center items-start"
+      >
+        <div
+          data-aos="zoom-in"
+          class="flex flex-col justify-center lg:justify-between text-center max-w-[120px] md:max-w-[240px] lg:max-w-[320px]"
+          data-aos="zoom-in"
+        >
+          <div class="rounded-full bg-primary p-2 md:p-4 lg:p-6 mb-2 md:mb-4">
+            <img
+              src="src/img/page-2/icon1.gif"
+              alt=""
+              class="w-full rounded-full"
+            />
+          </div>
+          <h2 class="text-lg md:text-xl lg:text-3xl font-medium">
+            Overfishing
+          </h2>
+        </div>
+        <div
+          class="flex flex-col justify-center text-center max-w-[120px] md:max-w-[230px] lg:max-w-[320px]"
+          data-aos="zoom-in"
+        >
+          <div class="rounded-full bg-primary p-2 md:p-4 lg:p-6 mb-2 md:mb-4">
+            <img
+              src="src/img/page-2/icon2.gif"
+              alt=""
+              class="w-full rounded-full"
+            />
+          </div>
+          <h2 class="text-lg md:text-xl lg:text-3xl font-medium">Limbah</h2>
+        </div>
+        <div
+          class="flex flex-col justify-center text-center max-w-[120px] md:max-w-[230px] lg:max-w-[320px]"
+          data-aos="zoom-in"
+        >
+          <div class="rounded-full bg-primary p-2 md:p-4 lg:p-6 mb-2 md:mb-4">
+            <img
+              src="src/img/page-2/icon3.gif"
+              alt=""
+              class="w-full rounded-full"
+            />
+          </div>
+          <h2 class="text-lg md:text-xl lg:text-3xl font-medium">
+            Sampah Plastik
+          </h2>
+        </div>
+      </div>
+
+      <div
+        class="py-8 md:py-24 flex flex-col lg:flex-row justify-center gap-10 md:gap-10"
+      >
+        <div class="lg:w-[350px]" data-aos="fade-up">
+          <h1 class="text-3xl md:text-5xl font-semibold mb-2">Overfishing</h1>
+          <p class="text-lg md:text-xl">
+            Penangkapan ikan secara berlebihan tanpa memperhatikan kapasitas
+            regenerasi populasi ikan dapat mengganggu keseimbangan ekosistem
+            laut.
+          </p>
+          <div class="max-w-full mt-2 relative">
+            <img src="src/img/page-2/bg1.jpg" alt="" class="h-full w-full" />
+            <img
+              src="src/img/page-2/wave1.svg"
+              alt=""
+              class="absolute top-[-1%] w-full"
+            />
+          </div>
+        </div>
+        <div class="text-end lg:text-center lg:w-[350px]" data-aos="fade-up">
+          <h1 class="text-3xl md:text-5xl font-semibold mb-2">Limbah</h1>
+          <p class="text-lg md:text-xl">
+            Limbah industri, pertanian, dan perkotaan yang masuk ke perairan
+            laut dapat mencemari lingkungan laut dan meracuni makhluk hidup di
+            dalamnya.
+          </p>
+          <div class="max-w-full lg:min-w-[280px] mt-2 relative">
+            <img src="src/img/page-2/bg2.jpg" alt="" class="h-full w-full" />
+            <img
+              src="src/img/page-2/wave1.svg"
+              alt=""
+              class="absolute top-[-1%] w-full"
+            />
+          </div>
+        </div>
+        <div class="lg:text-end lg:w-[350px]" data-aos="fade-up">
+          <h1 class="text-3xl md:text-5xl font-semibold mb-2">
+            Sampah plastik
+          </h1>
+          <p class="text-lg md:text-xl">
+            Penggunaan plastik sekali pakai yang tidak terkelola dengan baik
+            dapat mencemari laut dan membahayakan satwa laut yang memakan atau
+            terperangkap oleh sampah plastik.
+          </p>
+          <div class="max-w-full mt-2 relative">
+            <img src="src/img/page-2/bg3.jpg" alt="" class="h-full w-full" />
+            <img
+              src="src/img/page-2/wave1.svg"
+              alt=""
+              class="absolute top-[-1%] w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- penyebab end -->
+
+    <!-- dampak start -->
+    <section class="px-6 md:px-16 py-20 bg-primary">
+      <h1
+        class="text-3xl md:text-5xl font-semibold text-center"
+        data-aos="fade-up"
+      >
+        Dampak yang disebakan oleh rusaknya ekosistem laut
+      </h1>
+      <div class="mt-8 md:mt-16 flex flex-col justify-center">
+        <div class="lg:flex-row-reverse lg:flex my-6" data-aos="fade-up">
+          <div class="max-w-full lg:flex-1 relative">
+            <img
+              src="src/img/page-2/bg4.jpg"
+              alt=""
+              class="w-full rounded-t-box lg:rounded-none"
+            />
+            <img
+              src="src/img/page-2/wave2.svg"
+              alt=""
+              class="w-full absolute bottom-[-1%] lg:hidden"
+            />
+            <img
+              src="src/img/page-2/bg41.jpg"
+              alt=""
+              class="w-full hidden lg:block"
+            />
+            <img
+              src="src/img/page-2/bg42.jpg"
+              alt=""
+              class="w-full hidden lg:block"
+            />
+          </div>
+          <div
+            class="pt-4 md:pt-8 bg-bg p-6 md:p-8 rounded-b-box lg:rounded-none lg:flex-1"
+          >
+            <h2
+              class="text-3xl md:text-5xl font-semibold text-center border-b-2 border-font pb-3 lg:pb-5 mb-6 lg:mb-8"
+            >
+              Dampaknya Bagi Alam
+            </h2>
+            <ul>
+              <li class="mb-4 lg:mb-8" data-aos="fade-right">
+                <h3 class="text-2xl md:text-3xl font-medium mb-1">
+                  1. Kehilangan Keanekaragaman Hayati
+                </h3>
+                <p class="text-lg md:text-xl">
+                  Ketika ekosistem laut rusak, banyak spesies ikan, mamalia
+                  laut, dan organisme lainnya yang terancam punah. Ini bisa
+                  mengganggu rantai makanan dan keseimbangan ekosistem secara
+                  keseluruhan.
+                </p>
+              </li>
+
+              <li
+                class="mb-4 lg:mb-8"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
+                <h3 class="text-2xl md:text-3xl font-medium mb-1">
+                  2. Kerusakan Terumbu Karang
+                </h3>
+                <p class="text-lg md:text-xl">
+                  Gangguan seperti polusi, peningkatan suhu air laut, atau
+                  penangkapan ikan berlebihan dapat merusak terumbu karang. Ini
+                  berdampak pada ribuan spesies yang bergantung padanya untuk
+                  makanan, tempat berlindung, dan reproduksi.
+                </p>
+              </li>
+              <li
+                class="mb-4 lg:mb-8"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              >
+                <h3 class="text-2xl md:text-3xl font-medium mb-1">
+                  3. Gangguan pada Siklus Air dan Iklim
+                </h3>
+                <p class="text-lg md:text-xl">
+                  Rusaknya ekosistem laut bisa menurunkan produksi sumber daya
+                  penting bagi manusia seperti makanan, obat-obatan, bahan
+                  bakar, dan material konstruksi. Hal ini bisa mengancam
+                  keberlanjutan sumber daya dan kesejahteraan manusia.
+                </p>
+              </li>
+              <li
+                class="mb-4 lg:mb-8"
+                data-aos="fade-right"
+                data-aos-delay="600"
+              >
+                <h3 class="text-2xl md:text-3xl font-medium mb-1">
+                  4. Kehilangan Sumber Daya
+                </h3>
+                <p class="text-lg md:text-xl">
+                  Rusaknya ekosistem laut bisa menurunkan produksi sumber daya
+                  penting bagi manusia seperti makanan, obat-obatan, bahan
+                  bakar, dan material konstruksi. Ini dapat mengancam
+                  keberlanjutan sumber daya dan kesejahteraan manusia.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:flex-row lg:flex my-6" data-aos="fade-up">
+          <div class="max-w-full lg:flex-1 relative">
+            <img
+              src="src/img/page-2/bg5.jpg"
+              alt=""
+              class="w-full rounded-t-box lg:rounded-none"
+            />
+            <img
+              src="src/img/page-2/wave2.svg"
+              alt=""
+              class="w-full absolute bottom-[-1%] lg:hidden"
+            />
+            <img
+              src="src/img/page-2/bg51.jpg"
+              alt=""
+              class="w-full hidden lg:block"
+            />
+            <img
+              src="src/img/page-2/bg52.jpg"
+              alt=""
+              class="w-full hidden lg:block"
+            />
+          </div>
+          <div
+            class="pt-4 md:pt-8 bg-bg p-6 md:p-8 rounded-b-box lg:rounded-none lg:flex-1"
+          >
+            <h2
+              class="text-3xl md:text-5xl font-semibold text-center border-b-2 border-font pb-3 lg:pb-5 mb-6 lg:mb-8"
+            >
+              Dampaknya Bagi Manusia
+            </h2>
+            <ul>
+              <li class="mb-4 lg:mb-8" data-aos="fade-left">
+                <h3 class="text-2xl md:text-3xl font-medium mb-1">
+                  1. Gangguan pada Sumber Pangan
+                </h3>
+                <p class="text-lg md:text-xl">
+                  Ekosistem laut yang rusak dapat mengganggu ketersediaan dan
+                  keberlanjutan sumber pangan laut, seperti ikan, kerang, dan
+                  krustasea. Hal ini dapat menyebabkan penurunan produksi
+                  perikanan dan mengancam ketahanan pangan masyarakat yang
+                  bergantung pada hasil laut.
+                </p>
+              </li>
+
+              <li
+                class="mb-4 lg:mb-8"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              >
+                <h3 class="text-2xl md:text-3xl font-medium mb-1">
+                  2. Kehilangan Mata Pencaharian:
+                </h3>
+                <p class="text-lg md:text-xl">
+                  Kerusakan ekosistem laut dapat mengakibatkan kehilangan mata
+                  pencaharian bagi nelayan, petani kerang, dan pekerja industri
+                  kelautan lainnya yang bergantung pada sumber daya laut untuk
+                  mencari nafkah.
+                </p>
+              </li>
+              <li
+                class="mb-4 lg:mb-8"
+                data-aos="fade-left"
+                data-aos-delay="400"
+              >
+                <h3 class="text-2xl md:text-3xl font-medium mb-1">
+                  3. Ancaman Kesehatan Masyarakat
+                </h3>
+                <p class="text-lg md:text-xl">
+                  Pencemaran laut dan penurunan kualitas air laut dapat
+                  menyebabkan penyebaran penyakit, terutama bagi masyarakat yang
+                  mengonsumsi hasil laut secara langsung atau terpapar oleh
+                  lingkungan laut yang tercemar.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:flex-row-reverse lg:flex my-6" data-aos="fade-up">
+          <div class="max-w-full lg:flex-1 relative">
+            <img
+              src="src/img/page-2/bg6.jpg"
+              alt=""
+              class="w-full rounded-t-box lg:rounded-none"
+            />
+            <img
+              src="src/img/page-2/wave2.svg"
+              alt=""
+              class="w-full absolute bottom-[-1%] lg:hidden"
+            />
+            <img
+              src="src/img/page-2/bg61.jpg"
+              alt=""
+              class="w-full hidden lg:block"
+            />
+            <img
+              src="src/img/page-2/bg62.jpg"
+              alt=""
+              class="w-full hidden lg:block"
+            />
+          </div>
+          <div
+            class="pt-4 md:pt-8 bg-bg p-6 md:p-8 rounded-b-box lg:rounded-none lg:flex-1"
+          >
+            <h2
+              class="text-3xl md:text-5xl font-semibold text-center border-b-2 border-font pb-3 lg:pb-5 mb-6 lg:mb-8"
+            >
+              Dampaknya Bagi Biota Laut
+            </h2>
+            <ul>
+              <li class="mb-4 lg:mb-8" data-aos="fade-right">
+                <h3 class="text-2xl md:text-3xl font-medium mb-1">
+                  1. Kehilangan Habitat
+                </h3>
+                <p class="text-lg md:text-xl">
+                  Degradasi terumbu karang bisa menyebabkan kehilangan habitat
+                  penting bagi berbagai spesies laut, termasuk ikan, moluska,
+                  dan organisme lainnya. Mereka bergantung pada terumbu karang
+                  untuk tempat berlindung, berkembang biak, dan mencari makan.
+                </p>
+              </li>
+
+              <li
+                class="mb-4 lg:mb-8"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
+                <h3 class="text-2xl md:text-3xl font-medium mb-1">
+                  2. Penurunan Keanekaragaman Hayati
+                </h3>
+                <p class="text-lg md:text-xl">
+                  Kerusakan ekosistem laut bisa mengancam kelangsungan hidup
+                  berbagai spesies laut dengan menurunkan keberagaman spesies,
+                  kesehatan genetik, dan meningkatkan risiko kepunahan.
+                </p>
+              </li>
+              <li
+                class="mb-4 lg:mb-8"
+                data-aos="fade-right"
+                data-aos-delay="400"
+              >
+                <h3 class="text-2xl md:text-3xl font-medium mb-1">
+                  3. Penyakit dan Kesehatan Hewan Laut
+                </h3>
+                <p class="text-lg md:text-xl">
+                  Penurunan kualitas air laut dan polusi bisa meningkatkan
+                  risiko penyakit pada biota laut, termasuk bleaching pada
+                  terumbu karang dan infeksi bakteri pada ikan.
+                </p>
+              </li>
+              <li
+                class="mb-4 lg:mb-8"
+                data-aos="fade-right"
+                data-aos-delay="600"
+              >
+                <h3 class="text-2xl md:text-3xl font-medium mb-1">
+                  4. Gangguan pada Rantai Makanan
+                </h3>
+                <p class="text-lg md:text-xl">
+                  Rusaknya ekosistem laut dapat mengubah rantai makanan dan
+                  menyebabkan ketergantungan berlebih pada beberapa spesies,
+                  berdampak signifikan pada ekosistem laut.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- dampak end -->
+
+    <!-- quote start -->
+    <section
+      class="px-7 flex items-center md:px-16 min-h-[40vh] lg:min-h-[60vh] bg-[url('img/page-2/bg7.jpg')] bg-cover bg-blend-multiply bg-gray-500"
+    >
+      <div data-aos="fade-right">
+        <p
+          class="text-white text-2xl md:text-4xl lg:text-5xl italic font-medium mb-4"
+        >
+          “ Laut bukanlah tempat sampah kita. Laut adalah sumber kehidupan yang
+          menakjubkan dan memerlukan perlindungan. “
+        </p>
+        <h2 class="text-primary text-lg md:text-xl font-semibold">
+          -Jane Goodall-
+        </h2>
+      </div>
+    </section>
+    <!-- quote end -->
+
+    <!-- footer start -->
+    <div class="bg-dark px-7 md:px-16">
+      <footer class="footer py-10 text-base-content">
+        <nav>
+          <h6 class="footer-title">PAGES</h6>
+          <a href="index.html" class="link link-hover">Beranda</a>
+          <a href="tentang.html" class="link link-hover">Tentang</a>
+          <a href="profil.html" class="link link-hover">Profil</a>
+          <a href="kontak.html" class="link link-hover">Kontak</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">PUSTAKA BIRU</h6>
+          <a href="pilar-kehidupan-bumi.html" class="link link-hover"
+            >Pilar Kehidupan Bumi</a
+          >
+          <a href="dekonstruksi-kerusakan-laut.html" class="link link-hover"
+            >Dekonstruksi Kerusakan Laut</a
+          >
+          <a href="melindungi-ekosistem-bawah-laut.html" class="link link-hover"
+            >Melindungi Ekosistem Bawah Laut</a
+          >
+          <a href="pelangi-bawah-laut.html" class="link link-hover"
+            >Pelangi Bawah Laut</a
+          >
+        </nav>
+        <nav>
+          <h6 class="footer-title">FEATURE</h6>
+          <a href="ocea-plastic-tracker.html" class="link link-hover"
+            >Ocean Plastic Tracker</a
+          >
+          <a href="ocean-marine-simulation.html" class="link link-hover"
+            >Ocean Marine Simulator</a
+          >
+          <a href="eco-marine-quiz.html" class="link link-hover"
+            >Eco Marine Quiz</a
+          >
+        </nav>
+      </footer>
+      <footer class="footer py-4 text-base-content">
+        <aside class="items-center grid-flow-col">
+          <img src="src/img/logo.jpg" class="w-11 h-11 rounded-full" alt="" />
+          <p>
+            <span class="text-2xl font-medium">OCEANICA</span> <br />Marine
+            Ecosystem
+          </p>
+        </aside>
+        <nav class="md:place-self-center md:justify-self-end">
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/aryandrxx/" target="_blank"
+              ><i data-feather="instagram"> </i
+            ></a>
+            <a href="https://github.com/aryndraa" target="_blank"
+              ><i data-feather="github"> </i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100094456982384"
+              target="_blank"
+              ><i data-feather="facebook"> </i
+            ></a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    <!-- footer end -->
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 800,
+      });
+    </script>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oceanica | PILAR KEHIDUPAN BUMI</title>
+
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="">
+    <!-- navbar start -->
+    <nav
+      class="fixed top-0 right-0 left-0 z-50 bg-bg shadow-lg px-6 md:px-24 py-4 lg:py-6 transform -translate-y-28 transition ease duration-500 text-font"
+      id="navbar"
+    >
+      <div class="hidden lg:flex items-center justify-between">
+        <div class="flex gap-8 items-center">
+          <a
+            href="index.html"
+            class="flex items-center gap-2 text-4xl font-semibold"
+          >
+            <img
+              src="src/img/logo.jpg"
+              class="w-12 rounded-full transition ease-in-out duration-300"
+              alt=""
+            />
+          </a>
+          <div class="flex items-center gap-1 text-2xl font-medium">
+            <details class="dropdown">
+              <summary
+                class="cursor-pointer hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >
+                Pustaka Biru
+              </summary>
+              <ul class="shadow-xl mt-9 bg-bg dropdown-content w-64">
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pilar-kehidupan-bumi.html">Pilar Kehidupan Bumi</a>
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="dekonstruksi-kerusakan-laut.html"
+                    >Dekonstruksi Kerusakan Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="melindungi-ekosistem-bawah-laut.html"
+                    >Melindungi Ekosistem Bawah Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pelangi-bawah-laut.html">Pelangi Bawah Laut</a>
+                </li>
+              </ul>
+            </details>
+
+            <a
+              href="ocea-plastic-tracker.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Tracker</a
+            >
+            <a
+              href="ocean-marine-simulation.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Simulation</a
+            >
+            <a
+              href="eco-marine-quiz.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Quiz</a
+            >
+          </div>
+        </div>
+        <div class="flex gap-8 items-center text-2xl font-medium text-font">
+          <div class="group relative">
+            <a href="index.html">
+              <i data-feather="home" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Beranda</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="tentang.html">
+              <i data-feather="info" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Tentang</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="profil.html">
+              <i data-feather="user" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Profil</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="kontak.html">
+              <i data-feather="mail" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Kontak</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="lg:hidden flex justify-between items-center">
+        <div>
+          <img src="src/img/logo.jpg" class="w-8 rounded-full" alt="" />
+        </div>
+        <div class="flex gap-4">
+          <a href="profil.html"><i data-feather="user"></i></a>
+          <a href="kontak.html"><i data-feather="mail"></i></a>
+          <button
+            id="menu-toggle"
+            class="text-font bg-trasnparent flex items-center font-medium gap-2 text-xl focus:outline-none"
+          >
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="lg:hidden hidden pt-6">
+        <a
+          href="index.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Beranda</a
+        >
+        <a
+          href="tentang.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tentang</a
+        >
+        <div class="relative">
+          <button
+            id="services-toggle-mobile"
+            class="block w-full text-left py-2 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25 focus:outline-none"
+          >
+            Daftar Baca
+          </button>
+          <div
+            id="services-dropdown-mobile"
+            class="top-full left-0 bg-gray-300 shadow bg-opacity-15 rounded-md py-2 mt-2 w-full hidden"
+          >
+            <a
+              href="pilar-kehidupan-bumi.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pilar Kehidupan Bumi</a
+            >
+            <a
+              href="dekonstruksi-kerusakan-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Dekonstruksi Kerusakan Laut</a
+            >
+            <a
+              href="melindungi-ekosistem-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Melindungi Ekosistem Bawah Laut</a
+            >
+            <a
+              href="pelangi-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pelangi Bawah Laut</a
+            >
+          </div>
+        </div>
+        <a
+          href="ocea-plastic-tracker.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tracker</a
+        >
+        <a
+          href="ocean-marine-simulation.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Simulation</a
+        >
+        <a
+          href="eco-marine-quiz.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Quiz</a
+        >
+      </div>
+      <button
+        class="absolute bottom-[-180%] md:bottom-[-90%] right-0 flex items-center justify-center bg-bg rounded-xl p-1 text-font mr-4"
+        onclick="scrollNav()"
+      >
+        <i
+          data-feather="chevron-down"
+          class="w-8 h-8 transform rotate-0 transition-transform duration-500"
+          id="btn-nav"
+        ></i>
+      </button>
+    </nav>
+    <!-- navbar end -->
+    <!-- hero start -->
+    <section
+      class="hero min-h-screen bg-blend-multiply bg-gray-500 relative bg-fixed"
+      style="background-image: url(src/img/page-1/bg.jpg)"
+    >
+      <div class="hero text-center text-neutral-content px-7 md:px-16">
+        <div class="">
+          <h1
+            class="mb-5 lg:mb-8 text-3xl md:text-6xl lg:text-7xl font-bold text-bg"
+            data-aos="fade-up"
+          >
+            Laut Sebagai <span class="text-primary">Pilar Kehidupan</span> Bumi
+          </h1>
+          <p
+            class="mb-5 text-lg md:text-xl text-bg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            esensial bagi kesejahteraan manusia dan semua makhluk hidup di
+            planet ini.
+          </p>
+        </div>
+      </div>
+      <div class="absolute bottom-[-1%] pointer-events-none">
+        <img src="src/img/page-1/svg1.svg" alt="" class="w-screen" />
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- manfaat start -->
+    <section class="px-7 md:px-16 py-12 relative">
+      <h1
+        class="text-center mb-4 md:mb-16 text-3xl md:text-5xl font-semibold"
+        data-aos="fade-up"
+      >
+        Mamfaat laut untuk alam
+      </h1>
+
+      <!-- button -->
+      <div
+        class="my-8 flex flex-wrap gap-3 md:gap-5 justify-center pointer-events-none"
+      >
+        <div
+          onclick="openBox('box1')"
+          class="bg-primary hover:bg-primary/70 transition ease-in-out duration-300 p-5 flex flex-col text-center justify-center rounded-box max-w-36 md:max-w-64 lg:max-w-96 cursor-pointer"
+          data-aos="zoom-in"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="src/img/page-1/icon1.svg"
+              class="md:w-32 md:mb-4"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl md:text-3xl font-medium">Penghasil Oksigen</h2>
+        </div>
+        <div
+          onclick="openBox('box2')"
+          class="bg-primary hover:bg-primary/70 transition ease-in-out duration-300 p-5 flex flex-col text-center justify-center rounded-box max-w-36 md:max-w-64 lg:max-w-96 cursor-pointer"
+          data-aos="zoom-in"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="src/img/page-1/icon2.svg"
+              class="md:w-32 md:mb-4"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl md:text-3xl font-medium">
+            Habitat Alami Biota Laut
+          </h2>
+        </div>
+        <div
+          onclick="openBox('box3')"
+          class="bg-primary hover:bg-primary/70 transition ease-in-out duration-300 p-5 flex flex-col text-center justify-center rounded-box max-w-36 md:max-w-64 lg:max-w-96 cursor-pointer"
+          data-aos="zoom-in"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="src/img/page-1/icon3.svg"
+              class="md:w-32 md:mb-4"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl md:text-3xl font-medium">Sumber Makanan</h2>
+        </div>
+        <div
+          onclick="openBox('box4')"
+          class="bg-primary hover:bg-primary/70 transition ease-in-out duration-300 p-5 flex flex-col text-center justify-center rounded-box max-w-36 md:max-w-64 lg:max-w-96 cursor-pointer"
+          data-aos="zoom-in"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="src/img/page-1/icon4.svg"
+              class="md:w-32 md:mb-4"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl md:text-3xl font-medium">
+            Mengurangi Pemanasan Global
+          </h2>
+        </div>
+        <div
+          onclick="openBox('box5')"
+          class="bg-primary hover:bg-primary/70 transition ease-in-out duration-300 p-5 flex flex-col text-center justify-center rounded-box max-w-36 md:max-w-64 lg:max-w-96 cursor-pointer"
+          data-aos="zoom-in"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="src/img/page-1/icon5.svg"
+              class="md:w-32 md:mb-4"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl md:text-3xl font-medium">
+            Pengendali Iklim Dan Suhu
+          </h2>
+        </div>
+        <div
+          onclick="openBox('box6')"
+          class="bg-primary hover:bg-primary/70 transition ease-in-out duration-300 p-5 flex flex-col text-center justify-center rounded-box max-w-36 md:max-w-64 lg:max-w-96 cursor-pointer"
+          data-aos="zoom-in"
+        >
+          <div class="flex justify-center mb-4">
+            <img
+              src="src/img/page-1/icon6.svg"
+              class="md:w-32 md:mb-4"
+              alt=""
+            />
+          </div>
+          <h2 class="text-xl md:text-3xl font-medium">
+            Sumber Energi Alternatif
+          </h2>
+        </div>
+      </div>
+
+      <!-- content -->
+      <div class="flex justify-center">
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box1"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box1.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">
+              Penghasil Oksigen
+            </h2>
+            <p class="text-lg md:text-xl mb-4 md:mb-8 text-start">
+              Fitoplankton dan ganggang laut, produsen utama oksigen, menyumbang
+              sekitar 70% oksigen di atmosfer bumi. Ancaman terhadap ekosistem
+              laut bisa mengganggu suplai oksigen manusia. Kehidupan laut
+              krusial bagi kita.
+            </p>
+            <button
+              onclick="closeBox('box1')"
+              class="py-1 px-3 bg-primary text-lg md:text-xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box2"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box2.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">
+              Habitat Alami Biota Laut
+            </h2>
+            <p class="text-lg md:text-xl mb-4 md:mb-8 text-start">
+              Laut adalah habitat alami untuk berbagai biota, dari plankton
+              hingga ikan dan mamalia laut. Ini menyediakan makanan, tempat
+              berkembang biak, dan perlindungan bagi keanekaragaman hayati laut.
+            </p>
+            <button
+              onclick="closeBox('box2')"
+              class="py-1 px-3 bg-primary text-lg md:text-xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box3"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box3.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">Sumber Makanan</h2>
+            <p class="text-lg md:text-xl mb-4 md:mb-8 text-start">
+              Laut adalah sumber pangan bagi makhluk hidup, menyediakan protein
+              tinggi dan Omega 3 dari ikan dan biota laut lainnya. Namun,
+              kerusakan dan pencemaran laut dapat mengancam pasokan protein dan
+              mengganggu kehidupan mereka yang bergantung padanya.
+            </p>
+            <button
+              onclick="closeBox('box3')"
+              class="py-1 px-3 bg-primary text-lg md:text-xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box4"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box4.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">
+              Mengurangi Pemanasan Global
+            </h2>
+            <p class="text-lg md:text-xl mb-4 md:mb-8 text-start">
+              Fitoplankton dan ganggang laut menyerap karbondioksida dan
+              melepaskan oksigen melalui fotosintesis, mengurangi efek rumah
+              kaca dan pemanasan global dengan mengurangi jumlah gas rumah kaca
+              di atmosfer.
+            </p>
+            <button
+              onclick="closeBox('box4')"
+              class="py-1 px-3 bg-primary text-lg md:text-xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box5"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box5.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">
+              Penghasil Oksigen
+            </h2>
+            <p class="text-lg md:text-xl mb-4 md:mb-8 text-start">
+              Lautan saling terhubung dan berfungsi sebagai pengontrol suhu dan
+              iklim global. Mereka mengalirkan air dari wilayah panas ke yang
+              lebih dingin, menjaga stabilitas suhu dan keseimbangan. Laut juga
+              menyerap lebih dari 30% karbondioksida yang membantu mencegah
+              pemanasan global.
+            </p>
+            <button
+              onclick="closeBox('box5')"
+              class="py-1 px-3 bg-primary text-lg md:text-xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box6"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box6.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">
+              Sumber Energi Alternatif
+            </h2>
+            <p class="text-lg md:text-xl mb-4 md:mb-8 text-start">
+              Laut merupakan sumber energi alternatif yang potensial, terutama
+              dalam bentuk energi gelombang. Pembangkit listrik tenaga ombak
+              telah dibangun di banyak negara maju seperti Amerika Serikat dan
+              Inggris, menyediakan energi listrik ramah lingkungan tanpa polusi
+              udara atau gas rumah kaca.
+            </p>
+            <button
+              onclick="closeBox('box6')"
+              class="py-1 px-3 bg-primary text-lg md:text-xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+        <div
+          class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 card min-w-[85%] lg:min-w-56 bg-bg shadow-xl shadow-dark rounded-xl z-50"
+          id="box1"
+        >
+          <div class="p-6 lg:p-8">
+            <figure class="rounded-xl mb-4 md:mb-8">
+              <img
+                src="src/img/page-1/box1.jpg"
+                alt=""
+                class="lg:max-h-[350px]"
+              />
+            </figure>
+            <h2 class="card-title text-2xl md:text-5xl mb-2">
+              Penghasil Oksigen
+            </h2>
+            <p class="text-lg md:text-xl mb-4 md:mb-8 text-start">
+              Fitoplankton dan ganggang laut, produsen utama oksigen, menyumbang
+              sekitar 70% oksigen di atmosfer bumi. Ancaman terhadap ekosistem
+              laut bisa mengganggu suplai oksigen manusia. Kehidupan laut
+              krusial bagi kita.
+            </p>
+            <button
+              onclick="closeBox('box1')"
+              class="py-1 px-3 bg-primary text-lg md:text-xl"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="fixed top-0 left-0 w-full h-full bg-gray-500 bg-opacity-35 z-20 hidden"
+        id="blocked"
+      ></div>
+    </section>
+
+    <!-- manfaat bagi manusia -->
+    <section class="bg-primary relative">
+      <div class="py-24 md:pt-64 px-7 md:px-16">
+        <h1
+          class="text-3xl md:text-5xl font-semibold mb-8 lg:mb-20"
+          data-aos="fade-right"
+          data-aos="zoom-in"
+        >
+          Manfaat laut untuk manusia
+        </h1>
+        <div
+          class="flex flex-col lg:flex-row lg:justify-center flex-wrap gap-3"
+        >
+          <div
+            class="card max-w-full shadow-xl bg-[url('img/page-1/box7.jpg')] bg-no-repeat bg-cover bg-blend-multiply bg-gray-600 text-bg min-h-96 lg:flex-1"
+            data-aos="zoom-in"
+          >
+            <div class="card-body flex-col">
+              <h2 class="card-title text-3xl md:text-4xl font-semiboldmb-2">
+                Sumber Mata Pencaharian
+              </h2>
+              <p class="text-lg md:text-xl">
+                Nelayan dan profesi terkait hidup dari laut, menukarkan hasil
+                tangkapan atau jasanya dengan uang untuk memperbaiki
+                kesejahteraan mereka. Namun, pencemaran laut mengancam sumber
+                penghasilan mereka, karena wisatawan enggan mengunjungi laut
+                yang tercemar dan berpotensi penuh sampah. Padahal, laut adalah
+                sumber nafkah bagi banyak orang.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card max-w-full shadow-xl bg-[url('img/page-1/box8.jpg')] bg-no-repeat bg-cover bg-blend-multiply bg-gray-600 text-bg min-h-96 lg:flex-1"
+            data-aos="zoom-in"
+            data-aos="zoom-in"
+          >
+            <div class="card-body flex-col">
+              <h2 class="card-title text-3xl md:text-4xl font-semibold mb-2">
+                Sumber Mineral
+              </h2>
+              <p class="text-lg md:text-xl">
+                garam berasal dari air laut yang diuapkan sehingga hanya tersisa
+                kristal-kristal garam. Kebutuhan manusia yang tak henti akan
+                garam akan terjamin selama ada laut, dan tentunya yang bersih.
+                Garam yang dibuat dari air laut yang kotor dan tercemar pun bisa
+                berbahaya bagi tubuh.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card max-w-full shadow-xl bg-[url('img/page-1/box9.jpg')] bg-no-repeat bg-cover bg-blend-multiply bg-gray-600 text-bg min-h-96 bg-center"
+            data-aos="zoom-in"
+          >
+            <div class="card-body flex-col">
+              <h2 class="card-title text-3xl md:text-4xl font-semibold mb-2">
+                Sumber Bahan Tambang
+              </h2>
+              <p class="text-lg md:text-xl">
+                Produksi minyak bumi sudah mulai bergeser dari daratan ke arah
+                perairan atau laut. Hal ini disebabkan oleh menipisnya cadangan
+                minyak di daratan, sementara semakin banyak cadangan minyak bumi
+                ditemukan di laut. Hal itu tidak mengherankan karena masih
+                banyak sekali sumber bahan tambang, seperti minyak bumi di
+                lautan dan belum dieksplorasi karena berbagai kesulitan dalam
+                melakukannya.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card max-w-full shadow-xl bg-[url('img/page-1/box10.jpg')] bg-no-repeat bg-cover bg-blend-multiply bg-gray-600 text-bg min-h-96 lg:flex-1"
+            data-aos="zoom-in"
+          >
+            <div class="card-body flex-col">
+              <h2 class="card-title text-3xl md:text-4xl font-semiboldmb-2">
+                Cadangan Air
+              </h2>
+              <p class="text-lg md:text-xl">
+                Air laut bisa diubah menjadi air tawar melalui desalinasi. Mesin
+                desalinasi digunakan di kapal untuk memperoleh air tawar saat
+                berlayar jauh. Walaupun penggunaannya masih terbatas, dengan
+                pertambahan populasi dan pencemaran air tawar, laut menjadi
+                sumber air yang potensial.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card max-w-full shadow-xl bg-[url('img/page-1/box11.jpg')] bg-no-repeat bg-cover bg-blend-multiply bg-gray-600 text-bg min-h-96 lg:flex-1"
+            data-aos="zoom-in"
+          >
+            <div class="card-body flex-col">
+              <h2 class="card-title text-3xl md:text-4xl font-semibold mb-2">
+                Jalur Transportasi
+              </h2>
+              <p class="text-lg md:text-xl">
+                Transportasi laut adalah solusi terbaik dan ekonomis untuk
+                negara-negara dengan banyak pulau seperti Indonesia. Kapal laut
+                dapat mengangkut berbagai jumlah penumpang dan barang,
+                menjadikannya pilihan yang lebih murah dibandingkan dengan
+                pesawat atau kendaraan darat untuk transportasi antarpulau.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card max-w-full shadow-xl bg-[url('img/page-1/box12.jpg')] bg-no-repeat bg-cover bg-blend-multiply bg-gray-600 text-bg min-h-96 bg-bottom"
+            data-aos="zoom-in"
+          >
+            <div class="card-body flex-col">
+              <h2 class="card-title text-3xl md:text-4xl font-semibold mb-2">
+                Tempat Rekreasi
+              </h2>
+              <p class="text-lg md:text-xl">
+                Laut adalah tempat rekreasi yang menyenangkan untuk melepaskan
+                kejenuhan. Melihat pemandangan laut biru dan bermain air bersama
+                keluarga atau teman memberikan kesegaran. Banyak wisatawan dari
+                mancanegara mengunjungi pulau-pulau seperti Bali atau Hawaii
+                untuk menikmati keindahan laut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="src/img/tentang/svg1.svg"
+        alt=""
+        class="w-screen absolute top-[-1%]"
+      />
+    </section>
+    <!-- manfaat end -->
+
+    <!-- footer start -->
+    <div class="bg-dark px-7 md:px-16">
+      <footer class="footer py-10 text-base-content">
+        <nav>
+          <h6 class="footer-title">PAGES</h6>
+          <a href="index.html" class="link link-hover">Beranda</a>
+          <a href="tentang.html" class="link link-hover">Tentang</a>
+          <a href="profil.html" class="link link-hover">Profil</a>
+          <a href="kontak.html" class="link link-hover">Kontak</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">PUSTAKA BIRU</h6>
+          <a href="pilar-kehidupan-bumi.html" class="link link-hover"
+            >Pilar Kehidupan Bumi</a
+          >
+          <a href="dekonstruksi-kerusakan-laut.html" class="link link-hover"
+            >Dekonstruksi Kerusakan Laut</a
+          >
+          <a href="melindungi-ekosistem-bawah-laut.html" class="link link-hover"
+            >Melindungi Ekosistem Bawah Laut</a
+          >
+          <a href="pelangi-bawah-laut.html" class="link link-hover"
+            >Pelangi Bawah Laut</a
+          >
+        </nav>
+        <nav>
+          <h6 class="footer-title">FEATURE</h6>
+          <a href="ocea-plastic-tracker.html" class="link link-hover"
+            >Ocean Plastic Tracker</a
+          >
+          <a href="ocean-marine-simulation.html" class="link link-hover"
+            >Ocean Marine Simulator</a
+          >
+          <a href="eco-marine-quiz.html" class="link link-hover"
+            >Eco Marine Quiz</a
+          >
+        </nav>
+      </footer>
+      <footer class="footer py-4 text-base-content">
+        <aside class="items-center grid-flow-col">
+          <img src="src/img/logo.jpg" class="w-11 h-11 rounded-full" alt="" />
+          <p>
+            <span class="text-2xl font-medium">OCEANICA</span> <br />Marine
+            Ecosystem
+          </p>
+        </aside>
+        <nav class="md:place-self-center md:justify-self-end">
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/aryandrxx/" target="_blank"
+              ><i data-feather="instagram"> </i
+            ></a>
+            <a href="https://github.com/aryndraa" target="_blank"
+              ><i data-feather="github"> </i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100094456982384"
+              target="_blank"
+              ><i data-feather="facebook"> </i
+            ></a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    <!-- footer end -->
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+    </script>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

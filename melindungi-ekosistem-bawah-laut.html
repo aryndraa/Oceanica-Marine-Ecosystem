@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oceanica | Melindungi Ekosistem Bawah Laut</title>
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav
+      class="fixed top-0 right-0 left-0 z-50 bg-bg shadow-lg px-6 md:px-24 py-4 lg:py-6 transform -translate-y-28 transition ease duration-500 text-font"
+      id="navbar"
+    >
+      <div class="hidden lg:flex items-center justify-between">
+        <div class="flex gap-8 items-center">
+          <a
+            href="index.html"
+            class="flex items-center gap-2 text-4xl font-semibold"
+          >
+            <img
+              src="src/img/logo.jpg"
+              class="w-12 rounded-full transition ease-in-out duration-300"
+              alt=""
+            />
+          </a>
+          <div class="flex items-center gap-1 text-2xl font-medium">
+            <details class="dropdown">
+              <summary
+                class="cursor-pointer hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >
+                Pustaka Biru
+              </summary>
+              <ul class="shadow-xl mt-9 bg-bg dropdown-content w-64">
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pilar-kehidupan-bumi.html">Pilar Kehidupan Bumi</a>
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="dekonstruksi-kerusakan-laut.html"
+                    >Dekonstruksi Kerusakan Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="melindungi-ekosistem-bawah-laut.html"
+                    >Melindungi Ekosistem Bawah Laut</a
+                  >
+                </li>
+                <li
+                  class="bg-bg hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-4"
+                >
+                  <a href="pelangi-bawah-laut.html">Pelangi Bawah Laut</a>
+                </li>
+              </ul>
+            </details>
+
+            <a
+              href="ocea-plastic-tracker.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Tracker</a
+            >
+            <a
+              href="ocean-marine-simulation.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Simulation</a
+            >
+            <a
+              href="eco-marine-quiz.html"
+              class="hover:bg-primary/55 hover:text-font transition ease-in-out duration-300 p-2 px-4 rounded-box"
+              >Quiz</a
+            >
+          </div>
+        </div>
+        <div class="flex gap-8 items-center text-2xl font-medium text-font">
+          <div class="group relative">
+            <a href="index.html">
+              <i data-feather="home" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Beranda</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="tentang.html">
+              <i data-feather="info" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Tentang</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="profil.html">
+              <i data-feather="user" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Profil</span
+            >
+          </div>
+          <div class="group relative">
+            <a href="kontak.html">
+              <i data-feather="mail" class="w-[30px] h-[30px]"></i>
+            </a>
+            <span
+              class="absolute left-1/2 transform -translate-x-1/2 mt-4 rounded-lg bg-bg px-4 py-1 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 text-lg"
+              >Kontak</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="lg:hidden flex justify-between items-center">
+        <div>
+          <img src="src/img/logo.jpg" class="w-8 rounded-full" alt="" />
+        </div>
+        <div class="flex gap-4">
+          <a href="profil.html"><i data-feather="user"></i></a>
+          <a href="kontak.html"><i data-feather="mail"></i></a>
+          <button
+            id="menu-toggle"
+            class="text-font bg-trasnparent flex items-center font-medium gap-2 text-xl focus:outline-none"
+          >
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+      <div id="menu" class="lg:hidden hidden pt-6">
+        <a
+          href="index.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Beranda</a
+        >
+        <a
+          href="tentang.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tentang</a
+        >
+        <div class="relative">
+          <button
+            id="services-toggle-mobile"
+            class="block w-full text-left py-2 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25 focus:outline-none"
+          >
+            Daftar Baca
+          </button>
+          <div
+            id="services-dropdown-mobile"
+            class="top-full left-0 bg-gray-300 shadow bg-opacity-15 rounded-md py-2 mt-2 w-full hidden"
+          >
+            <a
+              href="pilar-kehidupan-bumi.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pilar Kehidupan Bumi</a
+            >
+            <a
+              href="dekonstruksi-kerusakan-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Dekonstruksi Kerusakan Laut</a
+            >
+            <a
+              href="melindungi-ekosistem-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Melindungi Ekosistem Bawah Laut</a
+            >
+            <a
+              href="pelangi-bawah-laut.html"
+              class="block px-4 py-2 text-lg font-medium md:text-xl text-font hover:bg-bg hover:bg-opacity-25"
+              >Pelangi Bawah Laut</a
+            >
+          </div>
+        </div>
+        <a
+          href="ocea-plastic-tracker.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Tracker</a
+        >
+        <a
+          href="ocean-marine-simulation.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Simulation</a
+        >
+        <a
+          href="eco-marine-quiz.html"
+          class="block py-2 md:py-4 px-4 text-lg md:text-xl font-medium text-font hover:bg-bg hover:bg-opacity-25"
+          >Quiz</a
+        >
+      </div>
+      <button
+        class="absolute bottom-[-180%] md:bottom-[-90%] right-0 flex items-center justify-center bg-bg rounded-xl p-1 text-font mr-4"
+        onclick="scrollNav()"
+      >
+        <i
+          data-feather="chevron-down"
+          class="w-8 h-8 transform rotate-0 transition-transform duration-500"
+          id="btn-nav"
+        ></i>
+      </button>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    <section
+      class="min-h-screen bg-[url('img/page-3/herobg.jpg')] bg-fixed bg-cover bg-blend-multiply bg-gray-300 lg:bg-center"
+    >
+      <div
+        class="bg-bg min-h-[50vh] lg:min-h-[40vh] px-7 md:px-16 flex justify-center items-center"
+      >
+        <div class="text-center lg:mt-24" data-aos="fade-down">
+          <h1 class="text-3xl md:text-5xl lg:text-7xl font-semibold mb-2">
+            Melindungi Keseimbangan Ekosistem Bawah Laut
+          </h1>
+          <p class="text-lg md:text-xl mb-8">
+            Solusi mengatasi rusaknya ekosistem laut
+          </p>
+          <a href="#materi" class="flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="relative bottom-1">
+        <img
+          src="src/img/page-3/svg1.svg"
+          alt=""
+          class="w-full absolute top-[-5%]"
+        />
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- materi start -->
+    <section class="px-7 md:px-16 py-24" id="materi">
+      <div class="my-8" data-aos="fade-right">
+        <h1 class="text-3xl md:text-5xl font-semibold mb-4">
+          Kenapa kita harus merawat lingkungan laut?
+        </h1>
+        <p class="text-lg md:text-xl text-justify">
+          Merawat laut penting karena laut adalah salah satu komponen utama
+          dalam ekosistem bumi. Laut menyediakan sumber daya hayati yang penting
+          bagi kehidupan di planet ini, termasuk oksigen, makanan, dan habitat
+          bagi berbagai jenis makhluk hidup. Melindungi laut membantu menjaga
+          keseimbangan ekosistem, mempertahankan keanekaragaman hayati, serta
+          mendukung mata pencaharian dan kehidupan manusia secara keseluruhan.
+          Tindakan kita untuk merawat laut, seperti mengurangi polusi,
+          melindungi terumbu karang, dan mengelola sumber daya laut secara
+          berkelanjutan, akan membantu menjaga kelestarian ekosistem laut untuk
+          generasi mendatang.
+        </p>
+      </div>
+      <div class="my-8">
+        <h1
+          class="text-3xl md:text-5xl font-semibold mb-4 md:mb-8 lg:mb-16"
+          data-aos="fade-right"
+        >
+          Apa saja yang dapat kita lakukan untuk menjaga keberlangsungan
+          ekosistem?
+        </h1>
+        <div class="flex flex-wrap lg:justify-center gap-5">
+          <div
+            class="p-4 md:p-6 border-font border-2 rounded-box lg:max-w-[550px]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h2 class="text-2xl md:text-4xl font-medium mb-3">
+              Pengurangan Polusi
+            </h2>
+            <ul class="text-lg md:text-xl">
+              <li>1. Mengurangi limbah plastik</li>
+              <li>2. Mengurangi limbah kimia</li>
+              <li>
+                3. Mendukung kebijakan pengelolaan limbah yang lebih ketat
+              </li>
+            </ul>
+          </div>
+          <div
+            class="p-4 md:p-6 border-font border-2 rounded-box lg:max-w-[550px]"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <h2 class="text-2xl md:text-4xl font-medium mb-3">
+              Perlindungan Terumbu Karang
+            </h2>
+            <ul class="text-lg md:text-xl">
+              <li>
+                1. Melindungi terumbu karang dari kerusakan fisik dan pencemaran
+              </li>
+              <li>2. Memulihkan terumbu karang yang rusak</li>
+            </ul>
+          </div>
+          <div
+            class="p-4 md:p-6 border-font border-2 rounded-box lg:max-w-[550px]"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <h2 class="text-2xl md:text-4xl font-medium mb-3">
+              Pengelolaan Perikanan yang Berkelanjutan
+            </h2>
+            <ul class="text-lg md:text-xl">
+              <li>1. Praktik penangkapan ikan yang bertanggung jawab</li>
+              <li>2. Pengaturan ukuran dan jumlah tangkapan</li>
+              <li>3. Perlindungan terhadap spesies yang terancam punah</li>
+            </ul>
+          </div>
+          <div
+            class="p-4 md:p-6 border-font border-2 rounded-box lg:max-w-[550px]"
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
+            <h2 class="text-2xl md:text-4xl font-medium mb-3">
+              Edukasi dan Kesadaran Masyarakat
+            </h2>
+            <ul class="text-lg md:text-xl">
+              <li>
+                1. Meningkatkan kesadaran masyarakat tentang pentingnya menjaga
+                laut
+              </li>
+              <li>2. Memperkenalkan perilaku ramah lingkungan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- materi end -->
+
+    <!-- jenis sampah start -->
+    <section class="py-28 pt-44 bg-primary relative">
+      <div class="px-7 md:px-6">
+        <h1
+          class="text-3xl md:text-5xl font-semibold mb-8 lg:mb-20 text-center"
+          data-aos="fade-up"
+        >
+          Mengetahui jenis plastik dan waktu terurainya di air
+        </h1>
+        <div class="flex flex-wrap gap-10 justify-center">
+          <div
+            class="bg-bg p-5 md:p-9 flex flex-col justify-center lg:max-w-[640px]"
+            data-aos="fade-up"
+          >
+            <div class="flex items-center pb-4 mb-4 border-b-2 border-font">
+              <div class="flex-1 min-w-[30%] md:w-[20%]">
+                <img src="src/img/page-3/symbol.svg" alt="" class="w-full" />
+              </div>
+              <h2 class="flex-1 text-2xl md:text-5xl font-semibold italic">
+                Polyethylene Terephthalate
+              </h2>
+            </div>
+            <p class="text-lg md:text-xl pb-2">
+              PET adalah jenis plastik yang biasanya digunakan untuk membuat
+              botol minuman, botol kemasan air minum, serat tekstil, dan wadah
+              makanan. Ini adalah plastik yang ringan, tahan terhadap tekanan,
+              dan tahan terhadap korosi.
+            </p>
+            <p class="text-lg md:text-xl font-medium">
+              Waktu terurai: ± 450 tahun.
+            </p>
+            <div class="pt-8 flex-col md:flex-row justify-center flex gap-5">
+              <img
+                src="src/img/page-3/botol-plastik_1.jpg"
+                alt=""
+                class="w-full md:max-w-[45%]"
+              />
+              <img
+                src="src/img/page-3/Wadah-makanan-kemasan-plastik-PET-untuk-buah.webp"
+                alt=""
+                class="w-full md:max-w-[45%]"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-bg p-5 md:p-9 flex flex-col justify-center lg:max-w-[640px]"
+            data-aos="fade-up"
+          >
+            <div class="flex items-center pb-4 mb-4 border-b-2 border-font">
+              <div class="flex-1 min-w-[30%] md:w-[20%]">
+                <img
+                  src="src/img/page-3/symbol (2).svg"
+                  alt=""
+                  class="w-full"
+                />
+              </div>
+              <h2 class="flex-1 text-2xl md:text-5xl font-semibold italic">
+                High-Density Polyethylene
+              </h2>
+            </div>
+            <p class="text-lg md:text-xl pb-2">
+              HDPE adalah jenis plastik yang digunakan untuk membuat botol susu,
+              botol sampo, botol deterjen, pipa air, dan berbagai wadah makanan.
+              HDPE adalah plastik yang cukup kuat, tahan terhadap korosi, dan
+              tahan terhadap berbagai bahan kimia
+            </p>
+            <p class="text-lg md:text-xl font-medium">
+              Waktu terurai: ± 20 - 100 tahun.
+            </p>
+            <div class="pt-8 flex-col md:flex-row justify-center flex gap-5">
+              <img
+                src="src/img/page-3/botol-sampo-plastik-hdpe_2.jpg"
+                alt=""
+                class="w-full md:max-w-[45%]"
+              />
+              <img
+                src="src/img/page-3/botol-galon-plastik.jpg"
+                alt=""
+                class="w-full md:max-w-[45%]"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-bg p-5 md:p-9 flex flex-col justify-center lg:max-w-[640px]"
+            data-aos="fade-up"
+          >
+            <div class="flex items-center pb-4 mb-4 border-b-2 border-font">
+              <div class="flex-1 min-w-[30%] md:w-[20%]">
+                <img
+                  src="src/img/page-3/symbol (5).svg"
+                  alt=""
+                  class="w-full"
+                />
+              </div>
+              <h2 class="flex-1 text-2xl md:text-5xl font-semibold italic">
+                Polyvinyl Chloride
+              </h2>
+            </div>
+            <p class="text-lg md:text-xl pb-2">
+              jenis plastik yang sering digunakan dalam berbagai aplikasi
+              konstruksi, pipa saluran air, kabel listrik, jendela, pintu, dan
+              produk-produk lainnya. Namun, PVC mengandung bahan kimia berbahaya
+              seperti klorin, dan dalam beberapa kondisi, dapat menyebabkan
+              pencemaran lingkungan dan berdampak negatif pada kesehatan
+              manusia.
+            </p>
+            <p class="text-lg md:text-xl font-medium">
+              Waktu terurai: +100 tahun.
+            </p>
+            <div class="pt-8 flex-col md:flex-row justify-center flex gap-5">
+              <img
+                src="src/img/page-3/S2ad3e4287603415e8ea6d79b53251d5c7.jpg_640x640Q90.jpg_.webp"
+                alt=""
+                class="w-full md:max-w-[45%]"
+              />
+              <img
+                src="src/img/page-3/Colored-Laminated-Thick-PVC-Sheet.webp"
+                alt=""
+                class="w-full md:max-w-[45%]"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-bg p-5 md:p-9 flex flex-col justify-center lg:max-w-[640px]"
+            data-aos="fade-up"
+          >
+            <div class="flex items-center pb-4 mb-4 border-b-2 border-font">
+              <div class="flex-1 min-w-[30%] md:w-[20%]">
+                <img
+                  src="src/img/page-3/symbol (4).svg"
+                  alt=""
+                  class="w-full"
+                />
+              </div>
+              <h2 class="flex-1 text-2xl md:text-5xl font-semibold italic">
+                Low-Density Polyethylene
+              </h2>
+            </div>
+            <p class="text-lg md:text-xl pb-2">
+              Adalah jenis plastik yang sering digunakan dalam pembuatan kantong
+              belanja, kantong pembungkus makanan, dan berbagai kemasan plastik
+              lainnya. LDPE memiliki sifat yang fleksibel, elastis, dan tahan
+              terhadap korosi, sehingga cocok untuk aplikasi-aplikasi yang
+              membutuhkan plastik yang lentur.
+            </p>
+            <p class="text-lg md:text-xl font-medium">
+              Waktu terurai: 20 - 100 tahun.
+            </p>
+            <div class="pt-8 flex-col md:flex-row justify-center flex gap-5">
+              <img
+                src="src/img/page-3/gelas-plastik.jpg"
+                alt=""
+                class="w-full md:max-w-[45%]"
+              />
+              <img
+                src="src/img/page-3/f9ce8b78-260a-47da-945a-71eb81c801b3.jpg"
+                alt=""
+                class="w-full md:max-w-[45%]"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-bg p-5 md:p-9 flex flex-col justify-center lg:max-w-[640px]"
+            data-aos="fade-up"
+          >
+            <div class="flex items-center pb-4 mb-4 border-b-2 border-font">
+              <div class="flex-1 min-w-[30%] md:w-[20%]">
+                <img
+                  src="src/img/page-3/symbol (3).svg"
+                  alt=""
+                  class="w-full"
+                />
+              </div>
+              <h2 class="flex-1 text-2xl md:text-5xl font-semibold italic">
+                Polypropylene
+              </h2>
+            </div>
+            <p class="text-lg md:text-xl pb-2">
+              jenis plastik yang umumnya digunakan untuk membuat wadah makanan,
+              tutup botol, botol minyak, dan kemasan produk lainnya. PP adalah
+              plastik yang cukup kuat dan tahan terhadap panas, sehingga sering
+              digunakan untuk produk-produk yang memerlukan ketahanan terhadap
+              suhu tinggi.
+            </p>
+            <p class="text-lg md:text-xl font-medium">
+              Waktu terurai: 20 - 30 tahun.
+            </p>
+            <div class="pt-8 flex-col md:flex-row justify-center flex gap-5">
+              <img
+                src="src/img/page-3/data.jpeg.webp"
+                alt=""
+                class="w-full md:max-w-[45%]"
+              />
+              <img
+                src="src/img/page-3/61817546f6effd08fd15797264fe4011.jpg_720x720q80.jpg"
+                alt=""
+                class="w-full md:max-w-[45%]"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-bg p-5 md:p-9 flex flex-col justify-center lg:max-w-[640px]"
+            data-aos="fade-up"
+          >
+            <div class="flex items-center pb-4 mb-4 border-b-2 border-font">
+              <div class="flex-1 min-w-[30%] md:w-[20%]">
+                <img
+                  src="src/img/page-3/symbol (1).svg"
+                  alt=""
+                  class="w-full"
+                />
+              </div>
+              <h2 class="flex-1 text-2xl md:text-5xl font-semibold italic">
+                Polystyrene
+              </h2>
+            </div>
+            <p class="text-lg md:text-xl pb-2">
+              jenis plastik yang sering digunakan untuk membuat gelas minuman,
+              wadah makanan sekali pakai, dan bahan baku untuk produk-produk
+              seperti mainan dan peralatan elektronik.uk produk-produk yang
+              memerlukan ketahanan terhadap suhu tinggi.
+            </p>
+            <p class="text-lg md:text-xl font-medium">
+              Waktu terurai: +500 tahun.
+            </p>
+            <div class="pt-8 flex-col md:flex-row justify-center flex gap-5">
+              <img
+                src="src/img/page-3/ps-plastic-supplement-bottle-180ml-230ml-1-700x700.webp"
+                alt=""
+                class="w-full md:max-w-[45%]"
+              />
+              <img
+                src="src/img/page-3/Easylife-High-Quality-Green-Round-Disposable-Plastic-PS-Plate.webp"
+                alt=""
+                class="w-full md:max-w-[45%]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="w-fulll "> -->
+      <img
+        src="src/img/page-3/svg3.svg"
+        alt=""
+        class="w-full absolute -top-1"
+      />
+      <!-- </div> -->
+    </section>
+    <!-- jenis sampah end -->
+
+    <!-- footer start -->
+    <div class="bg-dark px-7 md:px-16">
+      <footer class="footer py-10 text-base-content">
+        <nav>
+          <h6 class="footer-title">PAGES</h6>
+          <a href="index.html" class="link link-hover">Beranda</a>
+          <a href="tentang.html" class="link link-hover">Tentang</a>
+          <a href="profil.html" class="link link-hover">Profil</a>
+          <a href="kontak.html" class="link link-hover">Kontak</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">PUSTAKA BIRU</h6>
+          <a href="pilar-kehidupan-bumi.html" class="link link-hover"
+            >Pilar Kehidupan Bumi</a
+          >
+          <a href="dekonstruksi-kerusakan-laut.html" class="link link-hover"
+            >Dekonstruksi Kerusakan Laut</a
+          >
+          <a href="melindungi-ekosistem-bawah-laut.html" class="link link-hover"
+            >Melindungi Ekosistem Bawah Laut</a
+          >
+          <a href="pelangi-bawah-laut.html" class="link link-hover"
+            >Pelangi Bawah Laut</a
+          >
+        </nav>
+        <nav>
+          <h6 class="footer-title">FEATURE</h6>
+          <a href="ocea-plastic-tracker.html" class="link link-hover"
+            >Ocean Plastic Tracker</a
+          >
+          <a href="ocean-marine-simulation.html" class="link link-hover"
+            >Ocean Marine Simulator</a
+          >
+          <a href="eco-marine-quiz.html" class="link link-hover"
+            >Eco Marine Quiz</a
+          >
+        </nav>
+      </footer>
+      <footer class="footer py-4 text-base-content">
+        <aside class="items-center grid-flow-col">
+          <img src="src/img/logo.jpg" class="w-11 h-11 rounded-full" alt="" />
+          <p>
+            <span class="text-2xl font-medium">OCEANICA</span> <br />Marine
+            Ecosystem
+          </p>
+        </aside>
+        <nav class="md:place-self-center md:justify-self-end">
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://www.instagram.com/aryandrxx/" target="_blank"
+              ><i data-feather="instagram"> </i
+            ></a>
+            <a href="https://github.com/aryndraa" target="_blank"
+              ><i data-feather="github"> </i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100094456982384"
+              target="_blank"
+              ><i data-feather="facebook"> </i
+            ></a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    <!-- footer end -->
+
+    <!-- script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 800,
+      });
+    </script>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

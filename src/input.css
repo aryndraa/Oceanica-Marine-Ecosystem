@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fbf9ff;
+  color: #044d90;
+}
+
+.cardItem .btn {
+  opacity: 1; /* Awalnya tombol tidak terlihat */
+  transform: translateY(100%); /* Tombol dimulai dari bawah (-100%) */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Efek transisi */
+}
+
+.cardItem:hover .btn {
+  opacity: 1; /* Ketika card-link dihover, tombol akan muncul */
+  transform: translateY(0); /* Tombol akan berpindah ke posisi awal (0%) */
+}
+
+.scrollable-list {
+  -webkit-overflow-scrolling: touch;
+}
+
+.slick-next slick-arrow {
+  display: none !important;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  display: none;
+}
+
+.bub1 {
+  animation: bubbleUp 25s ease-out infinite;
+}
+.bub2 {
+  /* animation-delay: 0.s; */
+  animation: bubbleUp 30s ease-out infinite;
+}
+.bub3 {
+  /* animation-delay: 1s; */
+  animation: bubbleUp 45s ease-out infinite;
+}
+.bub4 {
+  /* animation-delay: 2s; */
+  animation: bubbleUp 55s ease-out infinite;
+}
+.bub5 {
+  /* animation-delay: 3s; */
+  animation: bubbleUp 40s ease-out infinite;
+}
+
+@keyframes bubbleUp {
+  0% {
+    top: 88%;
+  }
+  100% {
+    top: 0%; /* Move to right side */
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ombak */
+.wave {
+  animation: wave 20s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 10000px;
+  }
+}
+
+/* fish */
+.fish-l {
+  animation: swim-l 20s linear infinite;
+}
+
+.fish-l.fl1 {
+  animation-delay: 0ms;
+}
+.fish-l.fl2 {
+  animation-delay: 2s;
+  opacity: 0;
+}
+.fish-l.fl3 {
+  animation-delay: 1s;
+  opacity: 0;
+}
+.fish-l.fl4 {
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+@keyframes swim-l {
+  0% {
+    right: 0%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    right: 100%;
+  }
+}
+
+.fish-r {
+  animation: swim-r 20s linear infinite;
+}
+
+.fish-r.fr1 {
+  animation-delay: 1;
+}
+.fish-r.fr2 {
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+.fish-r.fr3 {
+  animation-delay: 10s;
+  animation-duration: 30s;
+  opacity: 0;
+}
+
+@keyframes swim-r {
+  0% {
+    right: 100%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    right: 0%;
+  }
+}
+
+.jelly {
+  animation: jel 20s linear infinite;
+}
+
+.jelly.jel1 {
+  animation-delay: 30s;
+  opacity: 0;
+}
+
+@keyframes jel {
+  0% {
+    bottom: 0%;
+    opacity: 1;
+  }
+  50% {
+    bottom: 10%;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0%;
+    opacity: 1;
+  }
+}
+
+/* input[type="radio"]:checked + label {
+  @apply bg-green-500 text-white;
+} */
